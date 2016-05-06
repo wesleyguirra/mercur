@@ -1,0 +1,50 @@
+.site-logo {
+    margin: 20px 0;
+}
+
+.site-nav ul {
+    margin: 20px 0;
+    padding: 0;
+}
+
+.site-nav ul li {
+    margin-right: 10px;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+.site-nav ul li span, 
+.site-nav ul li a {
+    text-transform: uppercase;
+    font: 400 15px GothamLight;
+    color: #000000;
+}
+
+.site-nav ul li span b, 
+.site-nav ul li a b {
+    text-transform: uppercase;
+    font: 700 15px Gotham;
+    color: #000000;
+}
+
+.site-nav ul li .flaticon-busca { 
+    color: #874487;
+    padding: 5px;
+}
+
+.header-stripes {
+    padding: 0;
+}
+.stripe-one {
+    background-color: #bf9ac2;
+    height: 15px;
+}
+.stripe-two {
+    background-color: #a370a5;
+    height: 20px;
+}
+.stripe-three {
+    background-color: #874487;
+    height: 25px;
+}
