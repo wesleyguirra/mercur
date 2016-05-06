@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 05/05/2016 14:06
+  	Creation date: 06/05/2016 13:13
   	*/
 
 @font-face {
@@ -24,7 +24,6 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-        font-size: 20px;
 font-style: normal;
 }
 
@@ -36,15 +35,16 @@ font-style: normal;
 .flaticon-comunidade:before { content: "\f105"; }
 .flaticon-consolidado:before { content: "\f106"; }
 .flaticon-cursos:before { content: "\f107"; }
-.flaticon-direita:before { content: "\f108"; }
-.flaticon-diretor:before { content: "\f109"; }
-.flaticon-duracao:before { content: "\f10a"; }
-.flaticon-esquerda:before { content: "\f10b"; }
-.flaticon-inicio:before { content: "\f10c"; }
-.flaticon-interface:before { content: "\f10d"; }
-.flaticon-investimento:before { content: "\f10e"; }
-.flaticon-local:before { content: "\f10f"; }
-.flaticon-people:before { content: "\f110"; }
-.flaticon-pessoas-envolvidas:before { content: "\f111"; }
-.flaticon-ponto-de-partida:before { content: "\f112"; }
-.flaticon-time:before { content: "\f113"; }
+.flaticon-cursos-link:before { content: "\f108"; }
+.flaticon-direita:before { content: "\f109"; }
+.flaticon-diretor:before { content: "\f10a"; }
+.flaticon-duracao:before { content: "\f10b"; }
+.flaticon-esquerda:before { content: "\f10c"; }
+.flaticon-inicio:before { content: "\f10d"; }
+.flaticon-interface:before { content: "\f10e"; }
+.flaticon-investimento:before { content: "\f10f"; }
+.flaticon-local:before { content: "\f110"; }
+.flaticon-people:before { content: "\f111"; }
+.flaticon-pessoas-envolvidas:before { content: "\f112"; }
+.flaticon-ponto-de-partida:before { content: "\f113"; }
+.flaticon-time:before { content: "\f114"; }

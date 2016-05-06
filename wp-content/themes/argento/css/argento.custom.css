@@ -1,3 +1,23 @@
+* ::-o-selection {
+    color: #fff;
+    background: #874487;
+}
+
+* ::-moz-selection {
+    color: #fff;
+    background: #874487;
+}
+
+* ::-webkit-selection {
+    color: #fff;
+    background: #874487;
+}
+
+* ::selection {
+    color: #fff;
+    background: #874487;
+}
+
 .site-logo {
     margin: 20px 0;
 }
@@ -47,4 +67,42 @@
 .stripe-three {
     background-color: #874487;
     height: 25px;
+}
+
+.home-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -3 ;
+    top: 0;
+    background: url(../img/slider-image.jpg) no-repeat center center;
+    background-size: cover;
+    border-bottom: solid 5px #874487;
+}
+
+.home-call-to-action {
+    position: absolute;
+    top: 300px;
+}
+.home-call-to-action span {
+    color: #bf9ac2;
+    font: 400 30px GothamLight;
+    font-style: italic;
+}
+.home-call-to-action h6 {
+    color: #874487;
+    font: 700 100px Comfortaa;
+}
+.home-call-to-action a {
+    color: #000000;
+    font: 700 20px Gotham;
+    line-height: 40px;
+    height: 40px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.home-call-to-action i {
+    font-size: 40px;
+    margin: 10px;
 }

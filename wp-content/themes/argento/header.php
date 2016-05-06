@@ -31,13 +31,7 @@
 		<div class="site-branding">
 		    <div class="container">
 		        <div class="row">
-                <?php
-                    if ( is_front_page() && is_home() ) : ?>
                         <div class="site-logo col-md-2"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="wp-content/themes/argento/img/logo.svg" alt="Argento Desenvolvimento Profissional"></a></div>
-                    <?php else : ?>
-                        <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                    <?php
-                    endif; ?>
                     <div class="site-nav col-md-7 col-md-offset-3">
                         <div class="col-md-8 col-md-offset-4">
                             <ul class="pull-right">
@@ -58,6 +52,24 @@
                     </div>
                 </div><!-- .row -->
 			</div><!-- .container -->
+			<?php
+                    if ( is_home() ) : ?>
+                    <div class="home-background"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="home-call-to-action">
+                                    <span>juntos fazemos educação de</span>
+                                    <h6>Qualidade Social</h6>
+                                    <div class="call-to-action pull-right">
+                                        <i class="flaticon-cursos-link"></i><a href="/cursos">Conheça nossos cursos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+			<?php else : ?>
 			<div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 header-stripes">
@@ -67,12 +79,8 @@
                     </div>
 			    </div>
 			</div>
+			<?php endif; ?>
 		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'argento' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
