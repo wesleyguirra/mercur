@@ -18,6 +18,16 @@
     background: #874487;
 }
 
+header {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+}
+
+.rev_slider_wrapper {
+    border-bottom: solid 5px #874487;
+}
+
 .site-logo {
     margin: 20px 0;
 }
