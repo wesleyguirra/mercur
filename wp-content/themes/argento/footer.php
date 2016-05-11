@@ -23,6 +23,8 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script type="text/javascript" src="wp-content/themes/argento/js/argento.custom.js"></script>
 </body>
 </html>
