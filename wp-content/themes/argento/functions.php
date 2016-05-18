@@ -150,3 +150,9 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+if (!is_admin()){
+  wp_deregister_script('jquery');
+  wp_register_script('jquery', ("https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"), false, '2.1.4');
+  wp_enqueue_script('jquery');
+}

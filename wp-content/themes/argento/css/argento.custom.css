@@ -34,16 +34,13 @@ a:active,a:hover {
 
 body {
     font: 15px/1.5 'Gotham';
+    overflow-x: hidden;
 }
 
-header {
+header.fixed {
     width: 100%;
     position: absolute;
     z-index: 999;
-}
-
-.rev_slider_wrapper {
-    border-bottom: solid 5px #874487;
 }
 
 .site-logo {
@@ -54,32 +51,43 @@ header {
     margin: 20px 0;
     padding: 0;
 }
-
 .site-nav ul li {
     margin-right: 10px;
     display: inline-block;
     list-style: none;
     padding: 0;
 }
-
-.site-nav ul li span, 
+.site-nav ul li a:after {
+    display: block;
+    content: "";
+    margin-top: 5px;
+    width: 25px;
+    height: 4px;
+    background-color: #874487;
+    -webkit-transition: width .2s; /* Safari */
+    transition: width .2s;
+}
+.site-nav ul li a:hover:after {
+    width: 100%;
+}
+.site-nav ul li span,
 .site-nav ul li a {
     text-transform: uppercase;
     font: 400 15px GothamLight;
     color: #000000;
 }
-
-.site-nav ul li span b, 
+.site-nav ul li .flaticon-busca {
+    font-size: 24px;
+    color: #874487;
+    padding: 5px;
+}
+.site-nav ul li span b,
 .site-nav ul li a b {
     text-transform: uppercase;
     font: 700 15px Gotham;
     color: #000000;
 }
 
-.site-nav ul li .flaticon-busca { 
-    color: #874487;
-    padding: 5px;
-}
 
 .header-stripes {
     padding: 0;
@@ -95,39 +103,6 @@ header {
 .stripe-three {
     background-color: #874487;
     height: 25px;
-}
-
-.home-background {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -3 ;
-    top: 0;
-    background: url(../img/slider-image.jpg) no-repeat center center;
-    background-size: cover;
-    border-bottom: solid 5px #874487;
-}
-
-.home-call-to-action {
-    position: absolute;
-    top: 300px;
-}
-.home-call-to-action span {
-    color: #bf9ac2;
-    font: 400 30px GothamLight;
-    font-style: italic;
-}
-.home-call-to-action h6 {
-    color: #874487;
-    font: 700 100px Comfortaa;
-}
-.home-call-to-action a {
-    color: #000000;
-    font: 700 20px Gotham;
-    line-height: 40px;
-    height: 40px;
-    vertical-align: middle;
-    text-transform: uppercase;
 }
 
 .home-call-to-action i {
@@ -226,9 +201,6 @@ header {
 	padding:50px 0;
 	position:relative
 }
-.trail:first-child {
-	padding-top:0
-}
 .trail:last-child {
 	padding-bottom:0
 }
@@ -265,7 +237,7 @@ header {
 .trail .slick-arrow:after {
 	content:'';
 	display:block;
-	height:40px;
+	height:20px;
 	position:absolute;
 	top:50%;
 	-webkit-transform:rotate(45deg) translateY(-50%);
@@ -273,7 +245,7 @@ header {
 	transform:rotate(45deg) translateY(-50%);
 	-webkit-transition:all .15s;
 	transition:all .15s;
-	width:40px
+	width:20px
 }
 .trail .slick-arrow.slick-hidden:after,.trail .slick-arrow.slick-disabled:after {
 	opacity:0
@@ -290,7 +262,7 @@ header {
 .trail .slick-prev:after {
 	border-left:2px solid rgba(135, 68, 135,0.8);
 	border-bottom:2px solid rgba(135, 68, 135,0.8);
-	right:110px
+	right: -5px;
 }
 .trail .slick-next {
 	background:-webkit-gradient(linear, left top, right top, from(transparent), color-stop(75%, #FFF));
@@ -304,7 +276,7 @@ header {
 .trail .slick-next:after {
 	border-right:2px solid rgba(135, 68, 135,0.8);
 	border-top:2px solid rgba(135, 68, 135,0.8);
-	left:110px
+	left:-5px;
 }
 
 .trail-header {
@@ -342,7 +314,7 @@ header {
 
 .trail-header-btn.is-active {
 	opacity:1;
-	visibility:visible
+	visibility:visible;
 }
 
 .trail-header-btn-close:after {
@@ -545,4 +517,164 @@ header {
 .trail-course-hover-btn:hover {
 	background:none;
 	color:#FFF
+}
+
+/* Footer */
+footer.site-footer {
+    padding: 35px;
+    background-color: #1d1d1d;
+    border-top: solid 5px transparent;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    -moz-border-image: -moz-linear-gradient(left, #874487 0%, #cd79cd 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, #874487 0%, #cd79cd 100%);
+    border-image: linear-gradient(to right, #874487 0%, #cd79cd 100%);
+    border-image-slice: 1;
+}
+
+footer.site-footer ul {
+    margin: 0;
+    padding: 0;
+}
+footer.site-footer ul li {
+    margin: 5px;
+    list-style: none;
+}
+footer.site-footer ul li:first-child { margin-top: 0; }
+footer.site-footer ul li:last-child { margin-bottom: 0; }
+footer.site-footer ul li.footer-menu-title {
+    color: #cd79cd;
+    font: 400 16px GothamLight;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+footer.site-footer ul li a {
+    color: #878787;
+    font: 400 16px GothamLight;
+}
+.last-footer {
+    padding: 10px 0;
+    background-color: #0c0c0c;
+}
+
+.last-footer p {
+    display: inline-block;
+    color: #3c3c3c;
+    font: 400 12px GothamLight;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+#testimonials {
+    margin: 50px 0 0 0;
+    padding: 50px 0;
+    background: url(../img/depoimentos-educacao-continuada.jpg);
+    background-size: cover;
+}
+
+#testimonials .school-name {
+    margin-bottom: 15px;
+    display: block;
+    color: #ffffff;
+    font: 700 20px Gotham;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#testimonials p {
+    display: inline-block;
+    color: #ffffff;
+    font: 500 20px Gotham;
+    text-align: center;
+}
+
+#testimonials p:after {
+    position: absolute;
+    content: '"';
+    color: #ffffff;
+    font: 700 60px Gotham;
+    text-transform: uppercase;
+}
+
+.testimonial.slick-slide {
+  margin-left-0 !important;
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: -45px;
+	display: block;
+	width: 100%;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+  background: #fff;
+  border: solid 2px transparent;
+  border-radius: 20px;
+	margin: 0 5px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.slick-dots li.slick-active {
+  background: transparent;
+  border: solid 2px #fff;
+
+}
+
+.slick-dots li button {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+  border: 0;
+	cursor: pointer;
+	color: transparent;
+	outline: none;
+	background: transparent;
+}
+
+#paths {
+  padding: 35px;
+  background-color: #1d1d1d;
+}
+
+#paths * {
+  text-align: center;
+}
+
+#paths i {
+  display: block;
+  font-size: 140px;
+  line-height: 140px;
+  color: #874487;
+  border-bottom: solid 3px #874487
+}
+
+#paths h2 {
+  font: 500 22px Gotham;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#paths p {
+  font: 100 13.5px GothamLight;
+  color: #fff;
+}
+
+.entry-title {
+  font: 100 36px GothamLight;
+  text-transform: uppercase;
 }

@@ -5,6 +5,36 @@ var $window = $(window),
 var WINDOW_TOP = 0,
     WINDOW_WIDTH = window.innerWidth;
 
+    function resumo_close($cursoSelecionado) {
+        var cursoAltura = $cursoSelecionado.attr('data-altura'),
+            $resumo = $cursoSelecionado.find('.resumo'),
+            $cursos = $cursoSelecionado.parents('.trail-courses').find('.trail-course');
+
+        // Cursos.
+        $cursos.removeClass('is-disabled');
+
+        // Ativo.
+        $cursoSelecionado
+            .removeClass('is-active')
+            .css('height', cursoAltura);
+
+        // Seta.
+        $cursoSelecionado
+            .parents('.trail')
+            .find('.slick-arrow')
+            .removeClass('slick-hidden');
+
+        // Resumo.
+        $resumo.removeClass('is-active');
+
+        setTimeout(function () {
+            $resumo.css({
+                'max-height': 0,
+                'overflow': 'hidden'
+            });
+        }, 400);
+    }
+
 
 /**
  * Trilha.
@@ -120,7 +150,40 @@ function set_slider($trail) {
     });
 }
 
-$document.on('ready', function () {    
+/* Depoimentos */
+
+function set_testimonials($testimonials) {
+    $testimonials.slick({
+        autoplay: true,
+        arrows: false,
+        adaptiveHeight: false,
+        dots: true,
+        infinite: true,
+        fade: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 800,
+        variableWidth: false,
+        responsive: [
+            {
+                breakpoint: 1081,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 851,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+}
+
+$document.on('ready', function () {
 
     /**
      * Trilhas.
@@ -163,7 +226,7 @@ $document.on('ready', function () {
 
         set_slider($cursos);
     });
-    
 
-   
+    set_testimonials($('.testimonials'));
+
 });
