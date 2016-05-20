@@ -30,6 +30,9 @@
 
 	<header id="masthead" class="site-header <?php if (is_home() ) : print "fixed" ?><?php endif; ?>" role="banner">
 		<div class="site-branding">
+				<?php if ( is_page_template('curso.php')) :
+					the_post_thumbnail($class='course-background');
+				endif; ?>
 		    <div class="container <?php if (is_home() ) : print "fixed" ?><?php endif; ?>">
 		        <div class="row">
 	            <div class="site-logo col-md-2">
@@ -63,5 +66,11 @@
 				endif; ?>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
-
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<?php get_breadcrumbs(); ?>
+			</div>
+		</div>
+	</div><!-- .container -->
 	<div id="content" class="site-content">

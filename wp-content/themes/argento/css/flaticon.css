@@ -1,15 +1,15 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 06/05/2016 13:13
+  	Creation date: 20/05/2016 16:16
   	*/
 
 @font-face {
   font-family: "Flaticon";
-  src: url("http://argento.pro.br/wp-content/themes/argento/fonts/Flaticon.eot");
-  src: url("http://argento.pro.br/wp-content/themes/argento//fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
-       url("http://argento.pro.br/wp-content/themes/argento//fonts/Flaticon.woff") format("woff"),
-       url("http://argento.pro.br/wp-content/themes/argento//fonts/Flaticon.ttf") format("truetype"),
-       url("http://argento.pro.br/wp-content/themes/argento//fonts/Flaticon.svg#Flaticon") format("svg");
+  src: url("./../fonts/Flaticon.eot");
+  src: url("./../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./../fonts/Flaticon.woff") format("woff"),
+       url("./../fonts/Flaticon.ttf") format("truetype"),
+       url("./../fonts/Flaticon.svg#Flaticon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "Flaticon";
-    src: url("http://argento.pro.br/wp-content/themes/argento/fonts/Flaticon.svg#Flaticon") format("svg");
+    src: url("./../fonts/Flaticon.svg#Flaticon") format("svg");
   }
 }
 
@@ -25,26 +25,28 @@
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
 font-style: normal;
+margin-left: 20px;
 }
 
-.flaticon-artigos:before { content: "\f100"; }
-.flaticon-busca:before { content: "\f101"; }
-.flaticon-business:before { content: "\f102"; }
-.flaticon-cancelar:before { content: "\f103"; }
-.flaticon-clareza-de-objetivos:before { content: "\f104"; }
-.flaticon-comunidade:before { content: "\f105"; }
-.flaticon-consolidado:before { content: "\f106"; }
-.flaticon-cursos:before { content: "\f107"; }
-.flaticon-cursos-link:before { content: "\f108"; }
-.flaticon-direita:before { content: "\f109"; }
-.flaticon-diretor:before { content: "\f10a"; }
-.flaticon-duracao:before { content: "\f10b"; }
-.flaticon-esquerda:before { content: "\f10c"; }
-.flaticon-inicio:before { content: "\f10d"; }
-.flaticon-interface:before { content: "\f10e"; }
-.flaticon-investimento:before { content: "\f10f"; }
-.flaticon-local:before { content: "\f110"; }
-.flaticon-people:before { content: "\f111"; }
-.flaticon-pessoas-envolvidas:before { content: "\f112"; }
-.flaticon-ponto-de-partida:before { content: "\f113"; }
-.flaticon-time:before { content: "\f114"; }
+.flaticon-aceitar:before { content: "\f100"; }
+.flaticon-artigos:before { content: "\f101"; }
+.flaticon-busca:before { content: "\f102"; }
+.flaticon-business:before { content: "\f103"; }
+.flaticon-cancelar:before { content: "\f104"; }
+.flaticon-clareza-de-objetivos:before { content: "\f105"; }
+.flaticon-comunidade:before { content: "\f106"; }
+.flaticon-consolidado:before { content: "\f107"; }
+.flaticon-cursos:before { content: "\f108"; }
+.flaticon-cursos-link:before { content: "\f109"; }
+.flaticon-direita:before { content: "\f10a"; }
+.flaticon-diretor:before { content: "\f10b"; }
+.flaticon-duracao:before { content: "\f10c"; }
+.flaticon-esquerda:before { content: "\f10d"; }
+.flaticon-inicio:before { content: "\f10e"; }
+.flaticon-interface:before { content: "\f10f"; }
+.flaticon-investimento:before { content: "\f110"; }
+.flaticon-local:before { content: "\f111"; }
+.flaticon-people:before { content: "\f112"; }
+.flaticon-pessoas-envolvidas:before { content: "\f113"; }
+.flaticon-ponto-de-partida:before { content: "\f114"; }
+.flaticon-time:before { content: "\f115"; }

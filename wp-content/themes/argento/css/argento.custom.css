@@ -674,7 +674,64 @@ footer.site-footer ul li a {
   color: #fff;
 }
 
+.breadcrumbs span[itemprop="title"],
+.breadcrumbs span.current {
+    color: #874487;
+}
+
+.breadcrumbs span.sep {
+  margin: 0 5px;
+  font-size: 12px;
+}
+
 .entry-title {
   font: 100 36px GothamLight;
+  text-transform: uppercase;
+}
+
+img[class*="-course-background"] {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.color {
+  color: #874487;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 8px !important;
+  border-radius: 0 !important;
+  font: 600 14px Gotham !important;
+  border: solid 1px rgba(0, 0, 0, 0.7) !important;
+  background: transparent;
+  margin: 10px 0 10px 0 !important;
+  display: inline-block;
+  min-width: 75%;
+}
+
+input[type="submit"] {
+  padding: 8px;
+  font:600 14px Gotham ;
+  border: solid 2px #000 !important;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+input::-moz-placeholder {
+  font-size: 14px;
+  font-family: GothamLight;
+  color: #000;
+  text-transform: uppercase;
+}
+
+h2 {
+  font: 300 30px GothamLight;
+  text-transform: uppercase;
+}
+
+h3 {
+  font: 600 16px Gotham;
   text-transform: uppercase;
 }

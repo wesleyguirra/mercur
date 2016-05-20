@@ -10,14 +10,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="container">
 	<header class="entry-header">
-		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<h2><?php the_field('course-subtitle'); ?></h2>
 				</div>
 			</div>
-		</div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -44,4 +44,5 @@
 			);
 		?>
 	</footer><!-- .entry-footer -->
+</div><!-- .container -->
 </article><!-- #post-## -->

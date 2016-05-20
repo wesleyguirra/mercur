@@ -66,7 +66,7 @@
                         <p>ARGENTO DESENVOLVIMENTO PROFISSIONAL 2015. Todos os direitos reservados.</p>
                     </div>
                     <div class="col-md-1 col-md-offset-3">
-                        <a href=""><img src="wp-content/themes/argento/img/logo-citr-co.png" alt=""></a>
+                        <a href=""><img src="./wp-content/themes/argento/img/logo-citr-co.png" alt=""></a>
                     </div>
                 </div>
             </div>
