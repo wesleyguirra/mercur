@@ -1,0 +1,9 @@
+{
+  "name": "argento",
+  "description": "Site WordPress Argento",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.6",
+    "slick-carousel": "^1.6.0"
+  }
+}

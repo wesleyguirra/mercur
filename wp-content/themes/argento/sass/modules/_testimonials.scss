@@ -1,0 +1,68 @@
+/*--------------------------------------------------------------
+## Testimonials
+--------------------------------------------------------------*/
+#testimonials {
+  margin: 50px 0 0 0;
+  padding: 50px 0;
+  background: url(../img/depoimentos-educacao-continuada.jpg);
+  background-size: cover;
+  .school-name {
+    margin-bottom: 15px;
+    display: block;
+    color: #ffffff;
+    font: 700 20px Gotham;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p {
+    display: inline-block;
+    color: #ffffff;
+    font: 500 20px Gotham;
+    text-align: center;
+  }
+  &:after {
+    position: absolute;
+    content: '"';
+    color: #ffffff;
+    font: 700 60px Gotham;
+    text-transform: uppercase;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    li {
+      position: relative;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      border: solid 2px transparent;
+      border-radius: 20px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+      &.slick-active {
+        background: transparent;
+        border: solid 2px #fff;
+      }
+      button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        border: 0;
+        cursor: pointer;
+        color: transparent;
+        outline: none;
+        background: transparent;
+      }
+    }
+  }
+}

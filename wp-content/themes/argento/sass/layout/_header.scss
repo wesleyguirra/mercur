@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+header {
+  &.fixed {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+  }
+}
+
+.header-stripes {
+  padding: 0;
+  .stripe-one {
+  background-color: #bf9ac2;
+  height: 15px;
+  }
+  .stripe-two {
+  background-color: #a370a5;
+  height: 20px;
+  }
+  .stripe-three {
+  background-color: #874487;
+  height: 25px;
+  }
+}
