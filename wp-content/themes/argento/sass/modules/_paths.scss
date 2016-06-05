@@ -1,0 +1,26 @@
+.section-paths {
+  padding: 35px;
+  background-color: #1d1d1d;
+  * {
+    text-align: center;
+  }
+  .path-icon {
+    display: block;
+    font-size: 140px;
+    line-height: 140px;
+    color: #874487;
+    border-bottom: solid 3px #874487;
+    &.flaticon-ponto-de-partida {
+      font-size: 100px;
+    }
+  }
+  .path-title {
+    font: 500 22px "Gotham";
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .path-description {
+    font: 100 13.5px "GothamLight";
+    color: #fff;
+  }
+}

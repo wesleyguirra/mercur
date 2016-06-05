@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+## Fonts
+--------------------------------------------------------------*/
+@font-face {
+    font-family: 'GothamLight';
+    src: url('http://argento.edu.s3.amazonaws.com/fonts/gotham-light-webfont.woff2') format('woff2'),
+         url('http://argento.edu.s3.amazonaws.com/fonts/gotham-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('http://argento.edu.s3.amazonaws.com/fonts/gotham-medium-webfont.woff2') format('woff2'),
+         url('http://argento.edu.s3.amazonaws.com/fonts/gotham-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('http://argento.edu.s3.amazonaws.com/fonts/gotham-bold-webfont.woff2') format('woff2'),
+         url('http://argento.edu.s3.amazonaws.com/fonts/gotham-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

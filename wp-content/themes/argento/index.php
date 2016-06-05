@@ -155,32 +155,32 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <section id="testimonials">
+    <div class="section-testimonials">
         <div class="container">
             <div class="row">
                 <div class="testimonials">
-                  <div class="testimonial">
-                      <span class="school-name">E.E. PROFª MARIA EUNICE M.FERREIRA</span>
+                  <div class="testimonial-slider">
+                      <span class="testimonial-title">E.E. PROFª MARIA EUNICE M.FERREIRA</span>
                       <p>A Equipe Gestora, logo no início do curso, percebeu que a construção de um Projeto Político Pedagógico bem elaborado, construção com a participaçãoo coletiva, envolvendo toda a comunidade escolar seria a solução para muitos problemas de gestão existentes na Escola.</p>
                   </div>
-                  <div class="testimonial">
-                      <span class="school-name">Teste</span>
+                  <div class="testimonial-slider">
+                      <span class="testimonial-title">Teste</span>
                       <p>Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Quem num gosti di mum que vai caçá sua turmis! Mé faiz elementum girarzis, nisi eros vermeio. </p>
                   </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="paths">
+    </div>
+    <div class="section-paths">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="row">
                         <div class="col-xs-8 col-xs-offset-2">
                             <a href="#">
-                              <i class="flaticon-cursos"></i>
-                              <h2>Cursos</h2>
-                              <p>
+                              <i class="path-icon flaticon-cursos"></i>
+                              <h2 class="path-title">Cursos</h2>
+                              <p class="path-description">
                                 Saiba mais sobre os cursos oferecidos pela Argento.
                               </p>
                             </a>
@@ -191,9 +191,9 @@ get_header(); ?>
                     <div class="row">
                         <div class="col-xs-8 col-xs-offset-2">
                             <a href="#">
-                              <i class="flaticon-artigos"></i>
-                              <h2>Artigos</h2>
-                              <p>
+                              <i class="path-icon flaticon-artigos"></i>
+                              <h2 class="path-title">Artigos</h2>
+                              <p class="path-description">
                                 A visão dos formadores da Argento sobre temas vivenciados na escola.
                               </p>
                             </a>
@@ -204,9 +204,9 @@ get_header(); ?>
                     <div class="row">
                         <div class="col-xs-8 col-xs-offset-2">
                             <a href="#">
-                              <i class="flaticon-ponto-de-partida"></i>
-                              <h2>Ponto de partida</h2>
-                              <p>
+                              <i class="path-icon flaticon-ponto-de-partida"></i>
+                              <h2 class="path-title">Ponto de partida</h2>
+                              <p class="path-description">
                                 Principais características das escolas eficazes.
                               </p>
                             </a>
@@ -215,7 +215,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    </section>
+    </div><!-- .section-paths -->
 <?php
 get_sidebar();
 get_footer();

@@ -10,48 +10,88 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<h3>Ensino fundamental</h3> <span>[ ciclo i ]</span>
-					<div class="row">
-						<div class="col-md-6">
-							<a class="box-curso">
-								<span>Leitura com autonomia</span>
-							</a>
-						</div>
-						<div class="col-md-6">
-							<a class="box-curso">
-								<span>Contexto de produção de texto</span>
-							</a>
-						</div>
-						<div class="col-md-6">
-							<a class="box-curso">
-								<span>Alfabetização</span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<h3>Ensino fundamental</h3> <span>[ ciclo ii e ensino médio ]</span>
-					<div class="row">
-						<div class="col-md-6">
-							<a class="box-curso">
-								<span>Desenvolvimento Profissional planejamento, gestão de sala de aula e avaliação</span>
-							</a>
-						</div>
-						<div class="col-md-6">
-							<a class="box-curso">
-								<span>Desenvolvimento de habilidades das competências leitora e escritora</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
+<div class="container">
+<div class="row">
+  <div class="col-md-10">
+    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+  </div>
+  <div class="col-md-2">
+    <select>
+      <option>Ensino Fundamental</option>
+      <option>Ensino Fundamental</option>
+    </select>
+  </div>
+</div>
+  <div class="row">
+    <div class="section-cursos col-md-6">
+      <div class="section-cursos-header">
+        <h2 class="section-cursos-title">Ensino fundamental<span class="section-cursos-subtitle">[ ciclo i ]</span></h2>
+      </div>
+      <ul class="section-cursos-lista">
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Engenharia Mecatrônica</span>
+          </a>
+        </li>
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Engenharia Mecatrônica</span>
+          </a>
+        </li>
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Engenharia de Produção</span>
+          </a>
+        </li>
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Sistemas de Informação</span>
+          </a>
+        </li>
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Administração</span>
+          </a>
+        </li>
+      </ul>
+    </div><!-- section-cursos -->
+    <div class="section-cursos col-md-6">
+      <div class="section-cursos-header">
+        <h2 class="section-cursos-title">Ensino fundamental<span class="section-cursos-subtitle">[ ciclo ii e ensino médio ]</span></h2>
+      </div>
+      <ul class="section-cursos-lista">
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Gestão de Tecnologia da Informação</span>
+          </a>
+        </li>
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Gestão de Tecnologia da Informação</span>
+          </a>
+        </li>
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Gestão de Tecnologia da Informação</span>
+          </a>
+        </li>
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Gestão de Tecnologia da Informação</span>
+          </a>
+        </li>
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Gestão de Tecnologia da Informação</span>
+          </a>
+        </li>
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Gestão de Tecnologia da Informação</span>
+          </a>
+        </li>
+      </ul>
+    </div><!-- section-cursos -->
+  </div><!-- .row -->
 </div><!-- .container -->
 </article><!-- #post-## -->
