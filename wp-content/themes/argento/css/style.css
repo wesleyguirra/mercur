@@ -40,6 +40,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
 @import "http://argento.edu.s3.amazonaws.com/css/flaticon.css";
 html {
   font-family: sans-serif;
@@ -6111,6 +6112,9 @@ button.close {
   display: none; }
 
 /*--------------------------------------------------------------
+# Font Awesome
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -6231,10 +6235,10 @@ footer.site-footer {
 ## Quem Somos
 --------------------------------------------------------------*/
 .section-quem-somos {
-  background: url(http://www.jobbi.com.br/escritorio/images/sala01.jpg);
+  background: url(http://argento.edu.s3.amazonaws.com/img/quem-somos-bg.png);
   background-size: cover;
-  padding: 150px 0 200px 0;
-  margin: -30px 0 0 0;
+  padding: 250px 0 200px 0;
+  margin: -48px 0 0 0;
   z-index: -1; }
   .section-quem-somos .quem-somos-title {
     font: 700 3rem 'Gotham Bold';
@@ -6242,6 +6246,27 @@ footer.site-footer {
     text-transform: uppercase;
     padding: 40px;
     text-align: center; }
+
+.section-nossa-equipe .nossa-equipe-member-name {
+  margin-top: 30px;
+  display: block;
+  text-transform: uppercase;
+  font: 400 2rem Gotham; }
+
+.section-nossa-equipe a {
+  font: 300 1.2rem GothamLight;
+  text-transform: uppercase; }
+
+.section-nossa-equipe .fa-linkedin {
+  font-size: 1.4rem;
+  margin: 0 5px 0 0;
+  color: #fff;
+  background: #0077b5;
+  padding: 7px;
+  border-radius: 2px; }
+
+.section-nossa-equipe p {
+  margin: 10px 0; }
 
 /*--------------------------------------------------------------
 ## Ponto de Partida
@@ -6696,7 +6721,7 @@ footer.site-footer {
     color: #fff; }
 
 .breadcrumbs {
-  margin: 15px 0; }
+  padding: 15px 0; }
 
 .breadcrumbs span[itemprop="title"],
 .breadcrumbs span.current {

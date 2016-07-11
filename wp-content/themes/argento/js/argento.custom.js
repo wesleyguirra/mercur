@@ -182,6 +182,37 @@ function set_testimonials($testimonials) {
         ]
     });
 }
+// Mmbros da equipe
+function set_team($team) {
+    $team.slick({
+        autoplay: false,
+        arrows: false,
+        adaptiveHeight: false,
+        dots: false,
+        infinite: false,
+        fade: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 800,
+        variableWidth: false,
+        responsive: [
+            {
+                breakpoint: 1081,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 851,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+}
 
 $document.on('ready', function () {
 
@@ -228,5 +259,7 @@ $document.on('ready', function () {
     });
 
     set_testimonials($('.testimonials'));
+  
+    set_team($('.section-nossa-equipe'));
 
 });

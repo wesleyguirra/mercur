@@ -2,10 +2,10 @@
 ## Quem Somos
 --------------------------------------------------------------*/
 .section-quem-somos {
-  background: url(http://www.jobbi.com.br/escritorio/images/sala01.jpg);
+  background: url(http://argento.edu.s3.amazonaws.com/img/quem-somos-bg.png);
   background-size: cover;
-  padding: 150px 0 200px 0;
-  margin: -30px 0 0 0;
+  padding: 250px 0 200px 0;
+  margin: -48px 0 0 0;
   z-index: -1;
   .quem-somos-title {
     font: 700 3rem 'Gotham Bold';
@@ -17,5 +17,25 @@
 }
 
 .section-nossa-equipe {
-
+  .nossa-equipe-member-name {
+	margin-top: 30px;
+	display: block;
+	text-transform: uppercase;
+	font: 400 2rem Gotham;
+  }
+  a {
+    font: 300 1.2rem GothamLight;
+    text-transform: uppercase;
+  }
+  .fa-linkedin {
+    font-size: 1.4rem;
+    margin: 0 5px 0 0;
+    color: #fff;
+    background: #0077b5;
+    padding: 7px;
+    border-radius: 2px;
+  }
+  p {
+    margin: 10px 0;
+  }
 }
