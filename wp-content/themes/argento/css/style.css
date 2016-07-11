@@ -6253,6 +6253,15 @@ footer.site-footer {
   text-transform: uppercase;
   font: 400 2rem Gotham; }
 
+.section-nossa-equipe .nossa-equipe-next-member {
+  z-index: 999;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  text-align: right; }
+  .section-nossa-equipe .nossa-equipe-next-member i {
+    margin-left: 10px; }
+
 .section-nossa-equipe a {
   font: 300 1.2rem GothamLight;
   text-transform: uppercase; }
@@ -6267,6 +6276,12 @@ footer.site-footer {
 
 .section-nossa-equipe p {
   margin: 10px 0; }
+
+.section-nossa-equipe .nossa-equipe-nav-arrows i:first-child {
+  margin-right: 5px; }
+
+.section-nossa-equipe .nossa-equipe-nav-arrows i:before {
+  font-size: 30px; }
 
 /*--------------------------------------------------------------
 ## Ponto de Partida

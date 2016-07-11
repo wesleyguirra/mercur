@@ -23,6 +23,16 @@
 	text-transform: uppercase;
 	font: 400 2rem Gotham;
   }
+  .nossa-equipe-next-member {
+    z-index: 999;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    text-align: right;
+    i {
+      margin-left: 10px;
+    }
+  }
   a {
     font: 300 1.2rem GothamLight;
     text-transform: uppercase;
@@ -37,5 +47,13 @@
   }
   p {
     margin: 10px 0;
+  }
+  .nossa-equipe-nav-arrows {
+    i:first-child {
+      margin-right: 5px;
+    }
+    i:before{
+      font-size: 30px;
+    }
   }
 }
