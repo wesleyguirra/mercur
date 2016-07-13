@@ -6746,6 +6746,18 @@ footer.site-footer {
   margin: 0 5px;
   font-size: 12px; }
 
+.author-image {
+  display: inline-block; }
+
+.author-info {
+  display: inline-block; }
+  .author-info .author-name {
+    margin: 0 0 0 10px;
+    font-weight: bold; }
+  .author-info .author-home {
+    margin: 10px;
+    display: inline-block; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -6760,11 +6772,20 @@ p {
   font-size: 15px; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
-
-.entry-title {
-  font: 100 36px "GothamLight";
+  clear: both;
   text-transform: uppercase; }
+
+h1 {
+  font: 100 36px "GothamLight"; }
+
+h2 {
+  font: 100 30px "GothamLight"; }
+
+.entry-title.post {
+  font: 400 30px Gotham; }
+
+.entry-title.color {
+  color: #874487; }
 
 /*--------------------------------------------------------------
 # Forms
