@@ -23,13 +23,13 @@
 define('DB_NAME', 'argento');
 
 /** MySQL database username */
-define('DB_USER', 'citrco');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '4?CudUQav$pA');
+define('DB_PASSWORD', 'ocmnce1995');
 
 /** MySQL hostname */
-define('DB_HOST', 'argento.ci64apbc9tl9.us-west-2.rds.amazonaws.com:3306');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');

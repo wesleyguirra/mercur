@@ -1,4 +1,3 @@
-<?php
 /**
  * The template for displaying archive pages.
  *
@@ -47,5 +46,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

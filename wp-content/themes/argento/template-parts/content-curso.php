@@ -25,21 +25,17 @@
 						<div class="col-md-6">
 							<h3>Público Alvo</h3>
 							<p>
-								<?php the_field('publico-alvo'); ?>
+								<?php the_field('publico_alvo'); ?>
 							</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-6">
 							<h2>Objetivos do curso</h2>
-							<?php the_field('objetivos-do-curso'); ?>
+							<?php the_field('objetivos_do_curso'); ?>
 						</div>
 						<div class="col-md-6">
-							<form class="" action="" method="post">
-								<input class="pull-right" type="text" name="nome" placeholder="Nome" required>
-								<input class="pull-right" type="email" name="email" placeholder="E-mail" required>
-								<input class="pull-right" type="submit" name="" value="Receba o cronograma">
-							</form>
+							<?php echo do_shortcode('[contact-form-7 id="22" title="Cronograma"]'); ?>
 						</div>
 					</div>
 					<div class="row">
@@ -58,7 +54,7 @@
 									<td><?php $turmas = get_field('turmas'); if ($turmas == 0) {echo "<i class=\"flaticon-cancelar\"></i>";} else {echo "<i class=\"flaticon-aceitar\"></i>";} ?></td>
 									<td><?php the_field('inicio'); ?></td>
 									<td><?php the_field('aulas'); ?></td>
-									<td><?php the_field('carga-horaria'); ?> Horas</td>
+									<td><?php the_field('carga_horaria'); ?> Horas</td>
 									<td><?php the_field('modalidade'); ?></td>
 									<td><?php the_field('investimento'); ?></td>
 								</tr>
