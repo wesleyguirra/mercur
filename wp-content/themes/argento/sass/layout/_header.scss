@@ -9,18 +9,37 @@ header {
   }
 }
 
-.header-stripes {
-  padding: 0;
-  .stripe-one {
-  background-color: #bf9ac2;
-  height: 15px;
+.button-search-mobile, .button-collapse-mobile {
+  text-align: center;
+  margin: 40px 0;
+  a {
+    font-size: 24px;
+  	color: #874487;
+  	padding: 10px;
   }
-  .stripe-two {
-  background-color: #a370a5;
-  height: 20px;
+}
+
+#logo-courves, #logo-letter-a{
+  display: none;
+}
+
+@media (min-width: $screen-md-min) {
+  #logo-courves, #logo-letter-a{
+    display: inline-block;;
   }
-  .stripe-three {
-  background-color: #874487;
-  height: 25px;
+  .header-stripes {
+    padding: 0;
+    .stripe-one {
+    background-color: #bf9ac2;
+    height: 15px;
+    }
+    .stripe-two {
+    background-color: #a370a5;
+    height: 20px;
+    }
+    .stripe-three {
+    background-color: #874487;
+    height: 25px;
+    }
   }
 }

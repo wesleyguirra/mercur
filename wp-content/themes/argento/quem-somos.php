@@ -14,6 +14,4 @@ get_header();
 		endif;
 
 	endwhile; // End of the loop.
-
-get_sidebar();
 get_footer();

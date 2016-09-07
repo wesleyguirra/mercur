@@ -159,13 +159,13 @@ if (!is_admin()){
 
 function get_breadcrumbs() {
 	/* === OPTIONS === */
-	$text['home']     = 'Home'; // text for the 'Home' link
-	$text['category'] = 'Archive by Category "%s"'; // text for a category page
-	$text['search']   = 'Search Results for "%s" Query'; // text for a search results page
+	$text['home']     = 'Ínicio'; // text for the 'Home' link
+	$text['category'] = 'Arquivos por Categoria "%s"'; // text for a category page
+	$text['search']   = 'Resultados da Pesquisa para "%s" Query'; // text for a search results page
 	$text['tag']      = 'Posts Tagged "%s"'; // text for a tag page
-	$text['author']   = 'Articles Posted by %s'; // text for an author page
+	$text['author']   = 'Artigos Postados po %s'; // text for an author page
 	$text['404']      = 'Não econtrado.'; // text for the 404 page
-	$text['page']     = 'Page %s'; // text 'Page N'
+	$text['page']     = 'Página %s'; // text 'Page N'
 	$text['cpage']    = 'Comment Page %s'; // text 'Comment Page N'
 	$wrap_before    = '<div class="breadcrumbs">'; // the opening wrapper tag
 	$wrap_after     = '</div><!-- .breadcrumbs -->'; // the closing wrapper tag

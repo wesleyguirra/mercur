@@ -29,8 +29,8 @@
       </div>
       <ul class="section-cursos-lista">
         <li class="section-cursos-item">
-          <a href="" class="section-cursos-link">
-            <span class="section-cursos-link-wrapper">Engenharia Mecatrônica</span>
+          <a href="/cursos/alfabetizacao" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Alfabetização</span>
           </a>
         </li>
         <li class="section-cursos-item">
@@ -55,6 +55,7 @@
         </li>
       </ul>
     </div><!-- section-cursos -->
+
     <div class="section-cursos col-md-6">
       <div class="section-cursos-header">
         <h2 class="section-cursos-title">Ensino fundamental<span class="section-cursos-subtitle">[ ciclo ii e ensino médio ]</span></h2>

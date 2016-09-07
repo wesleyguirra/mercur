@@ -218,8 +218,8 @@ th {
 # Base
 --------------------------------------------------------------*/
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1294,7 +1294,6 @@ a {
     color: #23527c;
     text-decoration: underline; }
   a:focus {
-    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
 
@@ -2510,7 +2509,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
@@ -3024,7 +3022,6 @@ select[multiple].input-lg,
   -ms-user-select: none;
   user-select: none; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
-    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
   .btn:hover, .btn:focus, .btn.focus {
@@ -6125,17 +6122,31 @@ header.fixed {
   position: absolute;
   z-index: 999; }
 
-.header-stripes {
-  padding: 0; }
-  .header-stripes .stripe-one {
-    background-color: #bf9ac2;
-    height: 15px; }
-  .header-stripes .stripe-two {
-    background-color: #a370a5;
-    height: 20px; }
-  .header-stripes .stripe-three {
-    background-color: #874487;
-    height: 25px; }
+.button-search-mobile, .button-collapse-mobile {
+  text-align: center;
+  margin: 40px 0; }
+  .button-search-mobile a, .button-collapse-mobile a {
+    font-size: 24px;
+    color: #874487;
+    padding: 10px; }
+
+#logo-courves, #logo-letter-a {
+  display: none; }
+
+@media (min-width: 992px) {
+  #logo-courves, #logo-letter-a {
+    display: inline-block; }
+  .header-stripes {
+    padding: 0; }
+    .header-stripes .stripe-one {
+      background-color: #bf9ac2;
+      height: 15px; }
+    .header-stripes .stripe-two {
+      background-color: #a370a5;
+      height: 20px; }
+    .header-stripes .stripe-three {
+      background-color: #874487;
+      height: 25px; } }
 
 /*--------------------------------------------------------------
 ## Footer
@@ -6392,6 +6403,11 @@ footer.site-footer {
 /*--------------------------------------------------------------
 # Modules
 --------------------------------------------------------------*/
+.no-padding {
+  padding: 0;
+  padding-left: 0;
+  padding-right: 0; }
+
 /*--------------------------------------------------------------
 ## Course Trail
 --------------------------------------------------------------*/
@@ -6832,41 +6848,41 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.site-logo {
-  margin: 20px 0; }
-
-.site-nav ul {
-  margin: 20px 0;
-  padding: 0; }
-  .site-nav ul li {
-    margin-right: 10px;
-    display: inline-block;
-    list-style: none;
+@media (min-width: 992px) {
+  .site-logo {
+    margin: 20px 0; }
+  .site-nav ul {
+    margin: 20px 0;
     padding: 0; }
-    .site-nav ul li a, .site-nav ul li span {
-      text-transform: uppercase;
-      font: 400 15px GothamLight;
-      color: #000000; }
-      .site-nav ul li a b, .site-nav ul li span b {
+    .site-nav ul li {
+      margin-right: 10px;
+      display: inline-block;
+      list-style: none;
+      padding: 0; }
+      .site-nav ul li a, .site-nav ul li span {
         text-transform: uppercase;
-        font: 700 15px Gotham;
+        font: 400 15px GothamLight;
         color: #000000; }
-    .site-nav ul li a:after {
-      display: block;
-      content: "";
-      margin-top: 5px;
-      width: 25px;
-      height: 4px;
-      background-color: #874487;
-      -webkit-transition: width .2s;
-      /* Safari */
-      transition: width .2s; }
-    .site-nav ul li a:hover:after {
-      width: 100%; }
-    .site-nav ul li .flaticon-busca {
-      font-size: 24px;
-      color: #874487;
-      padding: 5px; }
+        .site-nav ul li a b, .site-nav ul li span b {
+          text-transform: uppercase;
+          font: 700 15px Gotham;
+          color: #000000; }
+      .site-nav ul li a:after {
+        display: block;
+        content: "";
+        margin-top: 5px;
+        width: 25px;
+        height: 4px;
+        background-color: #874487;
+        -webkit-transition: width .2s;
+        /* Safari */
+        transition: width .2s; }
+      .site-nav ul li a:hover:after {
+        width: 100%; }
+      .site-nav ul li .flaticon-busca {
+        font-size: 24px;
+        color: #874487;
+        padding: 5px; } }
 
 /*--------------------------------------------------------------
 # Content

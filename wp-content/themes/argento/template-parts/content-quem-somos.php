@@ -22,9 +22,6 @@
     <div class="col-md-6">
       <h1 class="entry-title">Nossa Equipe</h1>
     </div>
-    <div class="col-md-6">
-      <div class="nossa-equipe-next-member"></div>
-    </div>
   </div>
 </div><!-- .container -->
 <div class="section-nossa-equipe">
@@ -44,9 +41,6 @@
           </div><!-- .nossa-equipe-nav-arrows -->
         </div>
         <div class="col-md-6">
-          <div class="nossa-equipe-next-member">
-            <a href="" class="next-member-link"><?php the_field('second_member_name'); ?><i class="flaticon-right-arrow"></i></a>
-          </div>
           <img src="http://argento.edu.s3.amazonaws.com/img/milton.png" alt="<?php the_field('first_member_name'); ?>">
         </div>
       </div>
@@ -68,9 +62,6 @@
           </div><!-- .nossa-equipe-nav-arrows -->
         </div>
         <div class="col-md-6">
-          <div class="nossa-equipe-next-member">
-            <a href="" class="next-member-link"><?php the_field('third_member_name'); ?><i class="flaticon-right-arrow"></i></a>
-          </div>
           <img src="http://argento.edu.s3.amazonaws.com/img/rosana.png" alt="<?php the_field('second_member_name'); ?>">
         </div>
       </div>

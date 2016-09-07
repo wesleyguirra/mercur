@@ -186,7 +186,9 @@ function set_testimonials($testimonials) {
 function set_team($team) {
     $team.slick({
         autoplay: false,
-        arrows: false,
+        arrows: true,
+        prevArrow: $('.nossa-equipe-nav-arrows .flaticon-left-arrow'),
+        nextArrow: $('.nossa-equipe-nav-arrows .flaticon-right-arrow'),
         adaptiveHeight: false,
         dots: false,
         infinite: false,
@@ -259,7 +261,7 @@ $document.on('ready', function () {
     });
 
     set_testimonials($('.testimonials'));
-  
+
     set_team($('.section-nossa-equipe'));
 
 });

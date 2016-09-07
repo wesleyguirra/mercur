@@ -12,3 +12,10 @@ gulp.task('styles:watch',function() {
     gulp.watch('sass/**/*.scss',['styles']);
     gulp.watch('sass/base/**/*.scss',['styles']);
 });
+
+
+// Handle the error
+function errorHandler (error) {
+  console.log(error.toString());
+  this.emit('end');
+}

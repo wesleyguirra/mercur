@@ -51,6 +51,7 @@
 									<td>Investimento</td>
 								</tr>
 								<tr>
+									<!-- Inserir funcionalidade que verifica se existem turmas, onde se não existirem turmas será exibido um form -->
 									<td><?php $turmas = get_field('turmas'); if ($turmas == 0) {echo "<i class=\"flaticon-cancelar\"></i>";} else {echo "<i class=\"flaticon-aceitar\"></i>";} ?></td>
 									<td><?php the_field('inicio'); ?></td>
 									<td><?php the_field('aulas'); ?></td>

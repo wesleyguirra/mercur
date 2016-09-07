@@ -2,45 +2,48 @@
 ## Menus
 --------------------------------------------------------------*/
 
-.site-logo {
-    margin: 20px 0;
-}
 
-.site-nav ul {
-  margin: 20px 0;
-  padding: 0;
-  li {
-    margin-right: 10px;
-    display: inline-block;
-    list-style: none;
+@media (min-width: $screen-md-min) {
+  .site-logo {
+      margin: 20px 0;
+  }
+
+  .site-nav ul {
+    margin: 20px 0;
     padding: 0;
-    a, span {
-      text-transform: uppercase;
-      font: 400 15px GothamLight;
-      color: #000000;
-      b {
+    li {
+      margin-right: 10px;
+      display: inline-block;
+      list-style: none;
+      padding: 0;
+      a, span {
         text-transform: uppercase;
-        font: 700 15px Gotham;
+        font: 400 15px GothamLight;
         color: #000000;
+        b {
+          text-transform: uppercase;
+          font: 700 15px Gotham;
+          color: #000000;
+        }
       }
-    }
-    a:after {
-      display: block;
-      content: "";
-      margin-top: 5px;
-      width: 25px;
-      height: 4px;
-      background-color: #874487;
-      -webkit-transition: width .2s; /* Safari */
-      transition: width .2s;
-    }
-    a:hover:after {
-      width: 100%;
-    }
-    .flaticon-busca {
-      font-size: 24px;
-      color: #874487;
-      padding: 5px;
+      a:after {
+        display: block;
+        content: "";
+        margin-top: 5px;
+        width: 25px;
+        height: 4px;
+        background-color: #874487;
+        -webkit-transition: width .2s; /* Safari */
+        transition: width .2s;
+      }
+      a:hover:after {
+        width: 100%;
+      }
+      .flaticon-busca {
+        font-size: 24px;
+        color: #874487;
+        padding: 5px;
+      }
     }
   }
 }
