@@ -76,6 +76,6 @@
 
 <?php wp_footer(); ?>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
-    <script type="text/javascript" src="http://argento.pro.br/wp-content/themes/argento/js/argento.custom.js"></script>
+    <script type="text/javascript" src="<?php echo site_url(); ?>/wp-content/themes/argento/js/argento.custom.js"></script>
 </body>
 </html>

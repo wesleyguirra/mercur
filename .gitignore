@@ -1,2 +1,5 @@
 /wp-content/themes/argento/bower_components/
 /wp-content/themes/argento/node_modules/
+/node_modules
+.DS_Store
+._.DS_Store
