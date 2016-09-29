@@ -6108,6 +6108,10 @@ a {
   text-decoration:none a:active, a:hover {
     outline: 0; }
 
+.nav-links [class^="nav-"] {
+  width: 50%;
+  display: inline-block; }
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/

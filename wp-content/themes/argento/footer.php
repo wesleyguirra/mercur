@@ -38,6 +38,7 @@
                                 <li class="footer-menu-title">Links úteis</li>
                                 <li><a href="#">Fale Conosco</a></li>
                                 <li><a href="#">Trabalhe Conosco</a></li>
+                                <li><a href="#">Mapa do Site</a></li>
                             </ul>
                         </div>
                         <div class="col-md-2 col-md-offset-1">
