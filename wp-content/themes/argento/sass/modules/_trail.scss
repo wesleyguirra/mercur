@@ -22,6 +22,9 @@
     transform:translateX(-50%);
     width:100%;
   }
+  .slick-list {
+    overflow: inherit;
+  }
   .slick-arrow {
     background:none;
     border:0;
