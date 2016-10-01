@@ -5527,11 +5527,12 @@ footer.site-footer {
 .section-nossa-equipe p {
   margin: 10px 0; }
 
-.section-nossa-equipe .nossa-equipe-nav-arrows i:first-child {
-  margin-right: 5px; }
-
-.section-nossa-equipe .nossa-equipe-nav-arrows i:before {
-  font-size: 30px; }
+.section-nossa-equipe .nossa-equipe-nav-arrows {
+  cursor: pointer; }
+  .section-nossa-equipe .nossa-equipe-nav-arrows i:first-child {
+    margin-right: 5px; }
+  .section-nossa-equipe .nossa-equipe-nav-arrows i:before {
+    font-size: 30px; }
 
 /*--------------------------------------------------------------
 ## Ponto de Partida
@@ -5930,12 +5931,6 @@ footer.site-footer {
     color: #ffffff;
     font: 500 20px Gotham;
     text-align: center; }
-  .section-testimonials:after {
-    position: absolute;
-    content: '"';
-    color: #ffffff;
-    font: 700 60px Gotham;
-    text-transform: uppercase; }
   .section-testimonials .slick-dots {
     position: absolute;
     bottom: -45px;

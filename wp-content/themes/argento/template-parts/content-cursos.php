@@ -29,31 +29,20 @@
       </div>
       <ul class="section-cursos-lista">
         <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Leitura com autonomia</span>
+          </a>
+        </li>
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Contexto de produção de texto</span>
+          </a>
+        </li>
+        <li class="section-cursos-item">
           <a href="/cursos/alfabetizacao" class="section-cursos-link">
             <span class="section-cursos-link-wrapper">Alfabetização</span>
           </a>
         </li>
-        <li class="section-cursos-item">
-          <a href="" class="section-cursos-link">
-            <span class="section-cursos-link-wrapper">Engenharia Mecatrônica</span>
-          </a>
-        </li>
-        <li class="section-cursos-item">
-          <a href="" class="section-cursos-link">
-            <span class="section-cursos-link-wrapper">Engenharia de Produção</span>
-          </a>
-        </li>
-        <li class="section-cursos-item">
-          <a href="" class="section-cursos-link">
-            <span class="section-cursos-link-wrapper">Sistemas de Informação</span>
-          </a>
-        </li>
-        <li class="section-cursos-item">
-          <a href="" class="section-cursos-link">
-            <span class="section-cursos-link-wrapper">Administração</span>
-          </a>
-        </li>
-      </ul>
     </div><!-- section-cursos -->
 
     <div class="section-cursos col-md-6">
@@ -63,32 +52,66 @@
       <ul class="section-cursos-lista">
         <li class="section-cursos-item">
           <a href="" class="section-cursos-link">
-            <span class="section-cursos-link-wrapper">Gestão de Tecnologia da Informação</span>
+            <span class="section-cursos-link-wrapper">Desenvolvimento profissional, planejamento, gestão de sala de aula e avaliação</span>
           </a>
         </li>
         <li class="section-cursos-item">
           <a href="" class="section-cursos-link">
-            <span class="section-cursos-link-wrapper">Gestão de Tecnologia da Informação</span>
+            <span class="section-cursos-link-wrapper">Desenvolvimento de habilidades das competências leitora e escritora</span>
+          </a>
+        </li>
+      </ul>
+    </div><!-- section-cursos -->
+    <div class="clearfix"></div>
+    <div class="section-cursos col-md-6">
+      <div class="section-cursos-header">
+        <h2 class="section-cursos-title">Gestão escolar</h2>
+      </div>
+      <ul class="section-cursos-lista">
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Construção do projeto político pedagógico</span>
           </a>
         </li>
         <li class="section-cursos-item">
           <a href="" class="section-cursos-link">
-            <span class="section-cursos-link-wrapper">Gestão de Tecnologia da Informação</span>
+            <span class="section-cursos-link-wrapper">Implantação do projeto político pedagógico</span>
           </a>
         </li>
         <li class="section-cursos-item">
           <a href="" class="section-cursos-link">
-            <span class="section-cursos-link-wrapper">Gestão de Tecnologia da Informação</span>
+            <span class="section-cursos-link-wrapper">Gestão de pessoas</span>
+          </a>
+        </li>
+      </ul>
+    </div><!-- section-cursos -->
+
+    <div class="section-cursos col-md-6">
+      <div class="section-cursos-header">
+        <h2 class="section-cursos-title">Ensino integral</h2>
+      </div>
+      <ul class="section-cursos-lista">
+        <li class="section-cursos-item">
+          <a href="" class="section-cursos-link">
+            <span class="section-cursos-link-wrapper">Nívelamento língua portuguesa e matemática</span>
           </a>
         </li>
         <li class="section-cursos-item">
           <a href="" class="section-cursos-link">
-            <span class="section-cursos-link-wrapper">Gestão de Tecnologia da Informação</span>
+            <span class="section-cursos-link-wrapper">Disciplinas eletivas</span>
           </a>
         </li>
+      </ul>
+    </div><!-- section-cursos -->
+    <div class="clearfix"></div>
+    <div class="section-cursos col-md-6">
+      <div class="section-cursos-header">
+        <h2 class="section-cursos-title">Educação básica</span></h2>
+      </div>
+      <ul class="section-cursos-lista">
         <li class="section-cursos-item">
           <a href="" class="section-cursos-link">
-            <span class="section-cursos-link-wrapper">Gestão de Tecnologia da Informação</span>
+            <span class="section-cursos-link-wrapper">Para que avaliar?</span>
           </a>
         </li>
       </ul>

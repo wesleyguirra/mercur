@@ -20,13 +20,6 @@
     font: 500 20px Gotham;
     text-align: center;
   }
-  &:after {
-    position: absolute;
-    content: '"';
-    color: #ffffff;
-    font: 700 60px Gotham;
-    text-transform: uppercase;
-  }
   .slick-dots {
     position: absolute;
     bottom: -45px;
