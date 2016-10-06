@@ -9,6 +9,9 @@
 
 ?>
 <div class="section-quem-somos">
+  <div class="quem-somos-bg">
+    <img src="http://argento.edu.s3.amazonaws.com/img/quem-somos-bg.png" alt="" />
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -16,6 +19,7 @@
       </div>
     </div>
   </div><!-- .container -->
+
 </div><!-- .section-quem-somos -->
 <div class="container">
   <div class="row">

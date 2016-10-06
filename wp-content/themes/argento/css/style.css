@@ -5483,8 +5483,7 @@ footer.site-footer {
 ## Quem Somos
 --------------------------------------------------------------*/
 .section-quem-somos {
-  background: url(http://argento.edu.s3.amazonaws.com/img/quem-somos-bg.png);
-  background-size: cover;
+  position: relative;
   padding: 250px 0 200px 0;
   margin: -48px 0 0 0;
   z-index: -1; }
@@ -5494,6 +5493,10 @@ footer.site-footer {
     text-transform: uppercase;
     padding: 40px;
     text-align: center; }
+  .section-quem-somos .quem-somos-bg {
+    position: absolute;
+    top: 0;
+    z-index: -3; }
 
 .section-nossa-equipe .nossa-equipe-member-name {
   margin-top: 30px;
