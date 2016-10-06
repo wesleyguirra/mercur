@@ -5357,6 +5357,9 @@ header.fixed {
   position: absolute;
   z-index: 999; }
 
+header .site-logo {
+  margin: 20px 0; }
+
 .button-search-mobile, .button-collapse-mobile {
   text-align: center;
   margin: 40px 0; }
@@ -5365,12 +5368,7 @@ header.fixed {
     color: #874487;
     padding: 10px; }
 
-#logo-courves, #logo-letter-a {
-  display: none; }
-
 @media (min-width: 992px) {
-  #logo-courves, #logo-letter-a {
-    display: inline-block; }
   .header-stripes {
     padding: 0; }
     .header-stripes .stripe-one {
@@ -5972,7 +5970,9 @@ footer.site-footer {
   .section-paths * {
     text-align: center; }
   .section-paths .path-icon {
-    display: block;
+    width: 140px;
+    margin: 0 auto;
+    display: inline-block;
     font-size: 140px;
     line-height: 140px;
     color: #874487;

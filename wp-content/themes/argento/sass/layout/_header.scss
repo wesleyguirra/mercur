@@ -7,6 +7,10 @@ header {
     position: absolute;
     z-index: 999;
   }
+
+  .site-logo {
+    margin: 20px 0;
+  }
 }
 
 .button-search-mobile, .button-collapse-mobile {
@@ -19,14 +23,8 @@ header {
   }
 }
 
-#logo-courves, #logo-letter-a{
-  display: none;
-}
 
 @media (min-width: $screen-md-min) {
-  #logo-courves, #logo-letter-a{
-    display: inline-block;;
-  }
   .header-stripes {
     padding: 0;
     .stripe-one {

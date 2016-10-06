@@ -20,9 +20,9 @@
                         <div class="col-md-2">
                             <ul>
                                 <li class="footer-menu-title">Argento</li>
-                                <li><a href="#">A Argento</a></li>
-                                <li><a href="#">Ponto de Partida</a></li>
-                                <li><a href="#">Cursos</a></li>
+                                <li><a href="/quem-somos">A Argento</a></li>
+                                <li><a href="/manifesto-argento">Manifesto Argento</a></li>
+                                <li><a href="/cursos">Cursos</a></li>
                             </ul>
                         </div>
                         <div class="col-md-2">
@@ -30,21 +30,20 @@
                                 <li class="footer-menu-title">Redes Sociais</li>
                                 <li><a href="#">Facebook</a></li>
                                 <li><a href="#">Linkedin</a></li>
-                                <li><a href="#">Blog</a></li>
                             </ul>
                         </div>
                         <div class="col-md-2">
                             <ul>
                                 <li class="footer-menu-title">Links úteis</li>
-                                <li><a href="#">Fale Conosco</a></li>
-                                <li><a href="#">Trabalhe Conosco</a></li>
-                                <li><a href="#">Mapa do Site</a></li>
+                                <li><a href="/contato">Fale Conosco</a></li>
+                                <li><a href="/contato">Trabalhe Conosco</a></li>
+                                <li><a href="/mapa-site">Mapa do Site</a></li>
                             </ul>
                         </div>
                         <div class="col-md-2 col-md-offset-1">
                             <ul>
                                 <li class="footer-menu-title">Mídia</li>
-                                <li><a href="#">Notícias</a></li>
+                                <li><a href="/artigos">Artigos</a></li>
                             </ul>
                         </div>
                         <div class="col-md-2">
