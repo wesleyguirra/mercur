@@ -10,7 +10,7 @@
 ?>
 <div class="section-quem-somos">
   <div class="quem-somos-bg">
-    <img src="http://argento.edu.s3.amazonaws.com/img/quem-somos-bg.png" alt="" />
+    <?php the_post_thumbnail($class='argento-img'); ?>
   </div>
   <div class="container">
     <div class="row">
