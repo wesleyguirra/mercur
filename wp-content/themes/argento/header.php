@@ -24,7 +24,17 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'argento' ); ?></a>
-
+	<div class="section-search">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<button class="search-close" type="button" name="button">fechar</button>
+					<div class="clearfix"></div>
+					<?php echo do_shortcode('[ezas name="Global" /]'); ?>
+				</div>
+			</div>
+		</div>
+	</div>
 	<header id="masthead" class="site-header <?php if (is_page_template('home-argento.php') ) : print "fixed" ?><?php endif; ?>" role="banner">
 		<div class="site-branding">
 				<?php if ( is_page_template('curso.php')) :

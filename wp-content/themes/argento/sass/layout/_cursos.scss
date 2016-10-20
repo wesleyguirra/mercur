@@ -43,9 +43,13 @@
 	height: 150px;
 	overflow: hidden;
 	text-transform: uppercase;
+	text-decoration: none;
 	-webkit-transition: all 400ms;
 	transition: all 400ms;
 	width: 100%;
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 .section-cursos-link-wrapper {

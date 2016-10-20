@@ -36,6 +36,9 @@
         -webkit-transition: width .2s; /* Safari */
         transition: width .2s;
       }
+      a:hover {
+        text-decoration: none;
+      }
       a:hover:after {
         width: 100%;
       }
@@ -43,6 +46,7 @@
         font-size: 24px;
         color: #874487;
         padding: 5px;
+        cursor: pointer;
       }
     }
   }

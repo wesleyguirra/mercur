@@ -4,17 +4,15 @@
   * {
     text-align: center;
   }
+  a:hover {
+    text-decoration: none;
+  }
   .path-icon {
     width: 140px;
-    margin: 0 auto;
     display: inline-block;
-    font-size: 140px;
-    line-height: 140px;
-    color: #874487;
+    max-height: 140px;
+    padding-bottom: 30px;
     border-bottom: solid 3px #874487;
-    &.flaticon-ponto-de-partida {
-      font-size: 100px;
-    }
   }
   .path-title {
     font: 500 22px "Gotham";

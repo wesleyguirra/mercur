@@ -299,6 +299,7 @@
   transition:all .4s;
   z-index:2;
   &:hover {
+    text-decoration: none;
     background:none;
     color:#FFF;
   }

@@ -4,16 +4,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font: 100 36px "GothamLight";
+  font: 100 36px GothamLight, sans-serif;
 }
 
 h2 {
-  font: 100 30px "GothamLight";
+  font: 100 30px GothamLight, sans-serif;
 }
 
 .entry-title {
   &.post {
-    font: 400 30px Gotham;
+    font: 400 30px Gotham, sans-serif;
   }
   &.color {
     color: #874487;

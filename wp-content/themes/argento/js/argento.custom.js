@@ -218,6 +218,20 @@ function set_team($team) {
 
 $document.on('ready', function () {
 
+    $document.on('click', '.flaticon-busca', function (e) {
+        $('.section-search').addClass('active');
+        $body.css('overflow','hidden');
+    });
+    $document.keyup(function(e) {
+     if (e.keyCode == 27) { // escape key maps to keycode `27`
+       $('.section-search').removeClass('active');
+       $body.css('overflow','scroll');
+    }
+    $document.on('click', '.search-close', function (e) {
+        $('.section-search').removeClass('active');
+        $body.css('overflow','scroll');
+    });
+});
     /**
      * Trilhas.
      */
