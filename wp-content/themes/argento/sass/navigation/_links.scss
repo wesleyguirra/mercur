@@ -7,7 +7,36 @@ a {
     }
 }
 
-.nav-links [class^="nav-"] {
-	width: 50%;
-	display: inline-block;
+.nav-links {
+	display: table;
+	.nav-previous, .nav-next {
+		width: 50%;
+		display: table-cell;
+		vertical-align: middle;
+		font-family: Gotham;
+		font-size: 10px;
+		text-transform: uppercase;
+		color: #874487;
+		a {
+			display: inline-block;
+			text-decoration: none;
+			color: #874487;
+		}
+		a:after {
+			display: block;
+			content: "";
+			margin-top: 5px;
+			width: 14px;
+			height: 2px;
+			background-color: #874487;
+			-webkit-transition: width .2s; /* Safari */
+			transition: width .2s;
+		}
+		a:hover:after {
+			width: 36px;
+		}
+	}
+	.nav-next {
+		text-align: right;
+	}
 }
