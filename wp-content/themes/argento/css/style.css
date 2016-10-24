@@ -2743,9 +2743,12 @@ h2 {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-input[type="text"],
-input[type="email"],
-textarea {
+form p {
+  margin: 0; }
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
   padding: 8px;
   border-radius: 0;
   font: 600 14px Roboto;
@@ -2753,16 +2756,17 @@ textarea {
   background: transparent;
   margin: 10px 0 10px 0;
   display: inline-block;
-  min-width: 75%; }
+  min-width: 75%;
+  max-width: 100%; }
 
-input[type="submit"] {
+form input[type="submit"] {
   padding: 8px;
   font: 600 14px Gotham;
   border: solid 2px #000;
   text-transform: uppercase;
   background: transparent; }
 
-input::-moz-placeholder {
+form input::-moz-placeholder {
   font-size: 14px;
   font-family: Roboto;
   color: #000;
