@@ -98,6 +98,7 @@ function set_slider($trail) {
             {
                 breakpoint: 1081,
                 settings: {
+                    dots: false,
                     slidesToShow: 3,
                     slidesToScroll: 3
                 }
@@ -105,8 +106,10 @@ function set_slider($trail) {
             {
                 breakpoint: 851,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false
                 }
             }
         ]
@@ -216,7 +219,22 @@ function set_team($team) {
     });
 }
 
+
 $document.on('ready', function () {
+    $document.on('click', '.flaticon-interface', function (e) {
+        $('.mobile-menu').addClass('active');
+        $body.css('overflow','hidden');
+    });
+    $document.keyup(function(e) {
+     if (e.keyCode == 27) { // escape key maps to keycode `27`
+       $('.mobile-menu').removeClass('active');
+       $body.css('overflow','scroll');
+     }
+    });
+    $document.on('click', '.mobile-close', function (e) {
+        $('.mobile-menu').removeClass('active');
+        $body.css('overflow','scroll');
+    });
 
     $document.on('click', '.flaticon-busca', function (e) {
         $('.section-search').addClass('active');
@@ -226,12 +244,12 @@ $document.on('ready', function () {
      if (e.keyCode == 27) { // escape key maps to keycode `27`
        $('.section-search').removeClass('active');
        $body.css('overflow','scroll');
-    }
+     }
+    });
     $document.on('click', '.search-close', function (e) {
         $('.section-search').removeClass('active');
         $body.css('overflow','scroll');
     });
-});
     /**
      * Trilhas.
      */

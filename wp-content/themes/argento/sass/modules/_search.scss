@@ -66,21 +66,20 @@
   }
   .ezas-post {
     border-bottom: solid 1px #555;
+    display: table;
+    width: 100%;
     &:last-child {
       border: none;
     }
     .ezas-title {
-      text-align: left;
       color: #dedede;
       font-weight: 300;
-    }
-    .ezas-title:after {
-      content: "";
-      display: block;
-      clear: both;
+      display: table-cell;
     }
     .ezas-image {
-      border-radius: 5px;
+      max-width: 30%;
+      border-radius: 4px;
+      display: table-cell;
     }
   }
 }

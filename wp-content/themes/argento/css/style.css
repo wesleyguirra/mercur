@@ -1901,11 +1901,12 @@ header .site-logo {
 
 .button-search-mobile, .button-collapse-mobile {
   text-align: center;
-  margin: 40px 0; }
+  margin: 25px 0 0 0; }
   .button-search-mobile a, .button-collapse-mobile a {
     font-size: 24px;
     color: #874487;
-    padding: 10px; }
+    padding: 10px;
+    text-decoration: none; }
 
 @media (min-width: 992px) {
   .header-stripes {
@@ -1956,8 +1957,24 @@ footer.site-footer {
 .last-footer {
   padding: 10px 0;
   background-color: #0c0c0c; }
-  .last-footer p {
-    display: inline-block;
+  .last-footer .contact {
+    font: 18px/20px GothamLight;
+    color: #878787;
+    text-align: center; }
+    .last-footer .contact li {
+      display: inline-block; }
+  .last-footer .copyright a {
+    margin: 20px 0;
+    float: none;
+    display: block;
+    text-align: center; }
+    @media (min-width: 992px) {
+      .last-footer .copyright a {
+        margin: 0;
+        float: right; } }
+  .last-footer .copyright p {
+    text-align: center;
+    display: block;
     color: #3c3c3c;
     font: 400 12px GothamLight;
     line-height: 20px;
@@ -2249,19 +2266,113 @@ footer.site-footer {
   .ezas-results:before {
     content: "Você está buscando por"; }
   .ezas-results .ezas-post {
-    border-bottom: solid 1px #555; }
+    border-bottom: solid 1px #555;
+    display: table;
+    width: 100%; }
     .ezas-results .ezas-post:last-child {
       border: none; }
     .ezas-results .ezas-post .ezas-title {
-      text-align: left;
       color: #dedede;
-      font-weight: 300; }
-    .ezas-results .ezas-post .ezas-title:after {
-      content: "";
-      display: block;
-      clear: both; }
+      font-weight: 300;
+      display: table-cell; }
     .ezas-results .ezas-post .ezas-image {
-      border-radius: 5px; }
+      max-width: 30%;
+      border-radius: 4px;
+      display: table-cell; }
+
+.slick-list {
+  overflow: inherit; }
+
+.slick-arrow {
+  background: none;
+  border: 0;
+  display: block !important;
+  font-size: 0;
+  height: 300px;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  top: 0;
+  width: 30%;
+  z-index: 2; }
+  .slick-arrow:after {
+    content: '';
+    display: block;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: rotate(45deg) translateY(-50%);
+    -ms-transform: rotate(45deg) translateY(-50%);
+    transform: rotate(45deg) translateY(-50%);
+    -webkit-transition: all .15s;
+    transition: all .15s;
+    width: 20px; }
+
+.slick-arrow.slick-hidden:after, .slick-arrow.slick-disabled:after {
+  opacity: 0; }
+
+.slick-prev {
+  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(75%, #FFF));
+  background: -webkit-linear-gradient(right, transparent 0%, #FFF 75%);
+  background: linear-gradient(to left, transparent 0%, #FFF 75%);
+  left: 0;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%); }
+  .slick-prev:after {
+    border-left: 2px solid rgba(135, 68, 135, 0.8);
+    border-bottom: 2px solid rgba(135, 68, 135, 0.8);
+    right: -5px; }
+
+.slick-next {
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(75%, #FFF));
+  background: -webkit-linear-gradient(left, transparent 0%, #FFF 75%);
+  background: linear-gradient(to right, transparent 0%, #FFF 75%);
+  right: 0;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%); }
+  .slick-next:after {
+    border-right: 2px solid rgba(135, 68, 135, 0.8);
+    border-top: 2px solid rgba(135, 68, 135, 0.8);
+    left: -5px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: #d1d1d1;
+    border: solid 1px transparent;
+    border-radius: 14px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li.slick-active {
+      background: #874487;
+      border: solid 1px #874487; }
+    .slick-dots li button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      border: 0;
+      cursor: pointer;
+      color: transparent;
+      outline: none;
+      background: transparent; }
 
 /*--------------------------------------------------------------
 ## Course Trail
@@ -2269,263 +2380,188 @@ footer.site-footer {
 .trail {
   padding: 50px 0;
   position: relative; }
-  .trail:last-child {
-    padding-bottom: 0; }
-  .trail:not(:first-child):after {
-    background: currentColor;
-    content: '';
-    display: block;
-    height: 1px;
-    left: 50%;
-    max-width: 1200px;
-    opacity: .2;
-    position: absolute;
-    top: 0;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 100%; }
-  .trail .slick-list {
-    overflow: inherit; }
-  .trail .slick-arrow {
-    background: none;
-    border: 0;
-    display: block !important;
-    font-size: 0;
-    height: 300px;
-    outline: none;
-    padding: 0;
-    position: absolute;
-    -webkit-transition: all .4s;
-    transition: all .4s;
-    top: 0;
-    width: 30%;
-    z-index: 2; }
-    .trail .slick-arrow:after {
-      content: '';
-      display: block;
-      height: 20px;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: rotate(45deg) translateY(-50%);
-      -ms-transform: rotate(45deg) translateY(-50%);
-      transform: rotate(45deg) translateY(-50%);
-      -webkit-transition: all .15s;
-      transition: all .15s;
-      width: 20px; }
-  .trail .slick-arrow.slick-hidden:after, .trail .slick-arrow.slick-disabled:after {
-    opacity: 0; }
-  .trail .slick-prev {
-    background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(75%, #FFF));
-    background: -webkit-linear-gradient(right, transparent 0%, #FFF 75%);
-    background: linear-gradient(to left, transparent 0%, #FFF 75%);
-    left: 0;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%); }
-    .trail .slick-prev:after {
-      border-left: 2px solid rgba(135, 68, 135, 0.8);
-      border-bottom: 2px solid rgba(135, 68, 135, 0.8);
-      right: -5px; }
-  .trail .slick-next {
-    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(75%, #FFF));
-    background: -webkit-linear-gradient(left, transparent 0%, #FFF 75%);
-    background: linear-gradient(to right, transparent 0%, #FFF 75%);
-    right: 0;
-    -webkit-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    transform: translateX(100%); }
-    .trail .slick-next:after {
-      border-right: 2px solid rgba(135, 68, 135, 0.8);
-      border-top: 2px solid rgba(135, 68, 135, 0.8);
-      left: -5px; }
-
-.trail-header {
-  margin-bottom: 25px;
-  padding-right: 85px;
-  position: relative; }
-  .trail-header .trail-header-title {
+  .trail .trail-header-title {
     font: 30px 'Gotham';
     letter-spacing: 3px;
     margin: 0;
     text-transform: uppercase; }
-  .trail-header .trail-header-desc {
-    margin: 5px 0 0; }
-  .trail-header .trail-header-btn {
-    background: none;
-    border: none;
-    font: 12px/34px 'Gotham';
-    letter-spacing: 1px;
-    opacity: 0;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    text-transform: uppercase;
-    -webkit-transition: all .4s;
-    transition: all .4s;
-    top: 0;
-    visibility: hidden; }
-  .trail-header .trail-header-btn.is-active {
-    opacity: 1;
-    visibility: visible; }
-  .trail-header .trail-header-btn-close:after {
-    content: '×';
-    display: inline-block;
-    font-size: 28px;
-    font-family: 'Arial';
-    line-height: 12px;
-    margin-top: -2px;
-    vertical-align: middle; }
+  .trail .trail-header-btn {
+    display: none; }
+  .trail .trail-course-box {
+    display: table; }
+    .trail .trail-course-box .trail-course-media {
+      width: 35%;
+      display: table-cell;
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+      background: #000;
+      cursor: pointer; }
+      .trail .trail-course-box .trail-course-media .trail-course-hover {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0; }
+    .trail .trail-course-box .trail-course-info {
+      padding: 0 15px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: left; }
+      .trail .trail-course-box .trail-course-info .trail-course-title {
+        font: 14px/20px 'Gotham';
+        text-transform: uppercase;
+        letter-spacing: -0.3px; }
 
-.trail-courses {
-  margin: 0 -20px;
-  position: relative; }
-  .trail-courses:after, .trail-courses:before {
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 30%;
-    z-index: 1; }
-  .trail-courses:before {
-    left: 100%; }
-  .trail-courses:after {
-    right: 100%; }
-
-.trail-course {
-  display: inline-block !important;
-  outline: none;
-  -webkit-transition: height .4s;
-  transition: height .4s;
-  vertical-align: top;
-  width: 25%;
-  z-index: 1; }
-  .trail-course.slick-slide {
-    opacity: .3;
+@media (min-width: 1200px) {
+  .slick-dots {
+    display: none; }
+  .trail-header {
+    margin-bottom: 25px;
+    padding-right: 85px;
     position: relative; }
-    .trail-course.slick-slide .trail-course-info {
-      margin-top: 15px;
-      margin-bottom: 0;
-      -webkit-transition: opacity .4s;
-      transition: opacity .4s;
-      opacity: 0; }
-  .trail-course.slick-active, .trail-course.slick-current {
-    opacity: 1; }
-    .trail-course.slick-active .trail-course-info, .trail-course.slick-current .trail-course-info {
-      opacity: 1; }
-  .trail-course.is-active {
-    opacity: 1; }
-    .trail-course.is-active .trail-course-box:hover {
+    .trail-header .trail-header-desc {
+      margin: 5px 0 0; }
+    .trail-header .trail-header-btn {
+      display: inherit;
       background: none;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      color: inherit; }
-    .trail-course.is-active .trail-course-hover {
-      display: none; }
-  .trail-course.is-disabled {
-    opacity: .3;
-    z-index: -1; }
-    .trail-course.is-disabled .trail-course-box:hover {
-      background: none;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      color: inherit; }
-    .trail-course.is-disabled .trail-course-hover {
-      display: none; }
-
-.trail-courses-hover {
-  background: #FFF;
-  overflow: hidden;
-  position: absolute;
-  -webkit-transition: all .4s;
-  transition: all .4s; }
-
-.trail-course-box {
-  padding: 20px;
-  position: relative;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  color: #874487; }
-  .trail-course-box:hover {
-    background: #1d1d1d;
-    -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
-    color: #dedede; }
-    .trail-course-box:hover .trail-course-hover {
-      opacity: 1;
-      visibility: visible; }
-
-.trail-course-media {
-  background: #000;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative; }
-
-.trail-course-title {
-  font: 16px/20px 'Gotham';
-  letter-spacing: -0.3px;
-  text-transform: uppercase; }
-
-.trail-course-hover {
-  color: #FFF;
-  left: 50%;
-  opacity: 0;
-  padding: 0 30px;
-  position: absolute;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  top: 50%;
-  visibility: hidden;
-  white-space: nowrap;
-  z-index: 2; }
-  .trail-course-hover:after {
-    background: rgba(0, 0, 0, 0.75);
-    bottom: -1000px;
-    content: '';
-    display: block;
-    position: absolute;
-    right: -1000px;
-    left: -1000px;
-    top: -1000px;
-    z-index: 1; }
-
-.trail-course-hover-info {
-  color: #FFF;
-  font: 12px/18px 'Gotham';
-  margin: 0 0 15px;
-  position: relative;
-  z-index: 2; }
-
-.trail-course-hover-more {
-  font: 12px 'Gotham';
-  letter-spacing: 0.5px;
-  position: relative;
-  text-transform: none;
-  z-index: 2; }
-
-.trail-course-hover-btn {
-  border: 2px solid #FFF;
-  background: #FFF;
-  color: #000;
-  display: inline-block;
-  font: 13px 'Gotham';
-  margin-left: 10px;
-  padding: 8px 15px;
-  position: relative;
-  text-transform: uppercase;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  z-index: 2; }
-  .trail-course-hover-btn:hover {
-    text-decoration: none;
-    background: none;
-    color: #FFF; }
+      border: none;
+      font: 12px/34px 'Gotham';
+      letter-spacing: 1px;
+      opacity: 0;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      text-transform: uppercase;
+      -webkit-transition: all .4s;
+      transition: all .4s;
+      top: 0;
+      visibility: hidden; }
+      .trail-header .trail-header-btn.is-active {
+        opacity: 1;
+        visibility: visible; }
+      .trail-header .trail-header-btn.trail-header-btn-close:after {
+        content: '×';
+        display: inline-block;
+        font-size: 28px;
+        font-family: 'Arial';
+        line-height: 12px;
+        margin-top: -2px;
+        vertical-align: middle; }
+  .trail-courses {
+    width: 100%;
+    margin: auto;
+    position: relative; }
+    .trail-courses:after, .trail-courses:before {
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 30%;
+      z-index: 1; }
+    .trail-courses:before {
+      left: 100%; }
+    .trail-courses:after {
+      right: 100%; }
+    .trail-courses .trail-course {
+      display: inline-block !important;
+      outline: none;
+      -webkit-transition: height .4s;
+      transition: height .4s;
+      vertical-align: top;
+      width: 25%;
+      z-index: 1; }
+      .trail-courses .trail-course.slick-slide {
+        position: relative;
+        opacity: .3; }
+        .trail-courses .trail-course.slick-slide .trail-course-info {
+          display: inherit;
+          margin-top: 15px;
+          margin-bottom: 0;
+          -webkit-transition: opacity .4s;
+          transition: opacity .4s;
+          opacity: 0; }
+          .trail-courses .trail-course.slick-slide .trail-course-info .trail-course-title {
+            font: 16px/20px 'Gotham'; }
+      .trail-courses .trail-course.slick-active, .trail-courses .trail-course.slick-current {
+        opacity: 1; }
+        .trail-courses .trail-course.slick-active .trail-course-info, .trail-courses .trail-course.slick-current .trail-course-info {
+          opacity: 1; }
+      .trail-courses .trail-course .trail-course-box {
+        display: inherit;
+        padding: 20px;
+        position: relative;
+        -webkit-transition: all .4s;
+        transition: all .4s;
+        color: #874487; }
+        .trail-courses .trail-course .trail-course-box:hover {
+          background: #1d1d1d;
+          -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);
+          color: #dedede; }
+          .trail-courses .trail-course .trail-course-box:hover .trail-course-hover {
+            opacity: 1;
+            visibility: visible; }
+        .trail-courses .trail-course .trail-course-box .trail-course-media {
+          width: auto;
+          min-height: 245px; }
+        .trail-courses .trail-course .trail-course-box .trail-course-hover {
+          position: absolute;
+          visibility: hidden;
+          opacity: 0;
+          padding: 0 30px;
+          top: 50%;
+          left: 50%;
+          color: #FFF;
+          text-align: center;
+          text-transform: uppercase;
+          white-space: nowrap;
+          -webkit-transition: all .4s;
+          transition: all .4s;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          z-index: 2; }
+          .trail-courses .trail-course .trail-course-box .trail-course-hover:after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: -1000px;
+            right: -1000px;
+            bottom: -1000px;
+            left: -1000px;
+            background: rgba(0, 0, 0, 0.75);
+            z-index: 1; }
+          .trail-courses .trail-course .trail-course-box .trail-course-hover .trail-course-hover-info {
+            color: #FFF;
+            font: 12px/18px 'Gotham';
+            margin: 0 0 15px;
+            position: relative;
+            z-index: 2; }
+          .trail-courses .trail-course .trail-course-box .trail-course-hover .trail-course-hover-more {
+            font: 12px 'Gotham';
+            letter-spacing: 0.5px;
+            position: relative;
+            text-transform: none;
+            z-index: 2; }
+          .trail-courses .trail-course .trail-course-box .trail-course-hover .trail-course-hover-btn {
+            border: 2px solid #FFF;
+            background: #FFF;
+            color: #000;
+            display: inline-block;
+            font: 13px 'Gotham';
+            margin-left: 10px;
+            padding: 8px 15px;
+            position: relative;
+            text-transform: uppercase;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+            z-index: 2; }
+            .trail-courses .trail-course .trail-course-box .trail-course-hover .trail-course-hover-btn:hover {
+              text-decoration: none;
+              background: none;
+              color: #FFF; }
+        .trail-courses .trail-course .trail-course-box .trail-course-info {
+          display: inherit; } }
 
 /*--------------------------------------------------------------
 ## Testimonials
@@ -2626,6 +2662,55 @@ footer.site-footer {
     margin: 10px;
     display: inline-block; }
 
+.mobile-menu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(135, 68, 135, 0.9);
+  opacity: 0;
+  visibility: hidden; }
+  .mobile-menu.active {
+    padding-top: 50px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999; }
+  .mobile-menu .mobile-close {
+    float: right;
+    color: #fff;
+    background: none;
+    border: none;
+    font: 12px/34px 'Gotham';
+    letter-spacing: 1px;
+    padding: 0;
+    text-transform: uppercase; }
+    .mobile-menu .mobile-close:after {
+      content: '×';
+      display: inline-block;
+      font-size: 28px;
+      font-family: 'Arial';
+      line-height: 12px;
+      margin-top: -2px;
+      vertical-align: middle; }
+  .mobile-menu ul {
+    display: block;
+    text-align: center;
+    padding: 0; }
+    .mobile-menu ul li {
+      margin: 20px 0;
+      text-transform: uppercase;
+      display: block;
+      text-align: center;
+      color: white; }
+      .mobile-menu ul li.social-links {
+        display: inline-block;
+        margin-right: 10px; }
+      .mobile-menu ul li a, .mobile-menu ul li span {
+        text-transform: uppercase;
+        font: 400 18px GothamLight; }
+        .mobile-menu ul li a b, .mobile-menu ul li span b {
+          text-transform: uppercase;
+          font: 700 18px Gotham; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -2706,6 +2791,9 @@ input::-moz-placeholder {
   src: url("http://argento.edu.s3.amazonaws.com/fonts/gotham-bold-webfont.woff2") format("woff2"), url("http://argento.edu.s3.amazonaws.com/fonts/gotham-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+img {
+  max-width: 100%; }
 
 /*--------------------------------------------------------------
 # Navigation

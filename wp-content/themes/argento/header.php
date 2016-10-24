@@ -24,6 +24,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'argento' ); ?></a>
+	<?php get_template_part( 'template-parts/mobile', 'nav' ); ?>
 	<div class="section-search">
 		<div class="container">
 			<div class="row">
