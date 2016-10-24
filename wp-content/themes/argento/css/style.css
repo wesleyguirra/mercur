@@ -2280,10 +2280,10 @@ footer.site-footer {
       border-radius: 4px;
       display: table-cell; }
 
-.slick-list {
+.trail .slick-list {
   overflow: inherit; }
 
-.slick-arrow {
+.trail .slick-arrow {
   background: none;
   border: 0;
   display: block !important;
@@ -2297,7 +2297,7 @@ footer.site-footer {
   top: 0;
   width: 30%;
   z-index: 2; }
-  .slick-arrow:after {
+  .trail .slick-arrow:after {
     content: '';
     display: block;
     height: 20px;
@@ -2310,10 +2310,10 @@ footer.site-footer {
     transition: all .15s;
     width: 20px; }
 
-.slick-arrow.slick-hidden:after, .slick-arrow.slick-disabled:after {
+.trail .slick-arrow.slick-hidden:after, .trail .slick-arrow.slick-disabled:after {
   opacity: 0; }
 
-.slick-prev {
+.trail .slick-prev {
   background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(75%, #FFF));
   background: -webkit-linear-gradient(right, transparent 0%, #FFF 75%);
   background: linear-gradient(to left, transparent 0%, #FFF 75%);
@@ -2321,12 +2321,12 @@ footer.site-footer {
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%); }
-  .slick-prev:after {
+  .trail .slick-prev:after {
     border-left: 2px solid rgba(135, 68, 135, 0.8);
     border-bottom: 2px solid rgba(135, 68, 135, 0.8);
     right: -5px; }
 
-.slick-next {
+.trail .slick-next {
   background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(75%, #FFF));
   background: -webkit-linear-gradient(left, transparent 0%, #FFF 75%);
   background: linear-gradient(to right, transparent 0%, #FFF 75%);
@@ -2334,12 +2334,12 @@ footer.site-footer {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%); }
-  .slick-next:after {
+  .trail .slick-next:after {
     border-right: 2px solid rgba(135, 68, 135, 0.8);
     border-top: 2px solid rgba(135, 68, 135, 0.8);
     left: -5px; }
 
-.slick-dots {
+.trail .slick-dots {
   position: absolute;
   bottom: -45px;
   display: block;
@@ -2347,7 +2347,7 @@ footer.site-footer {
   padding: 0;
   list-style: none;
   text-align: center; }
-  .slick-dots li {
+  .trail .slick-dots li {
     position: relative;
     display: inline-block;
     width: 7px;
@@ -2358,10 +2358,10 @@ footer.site-footer {
     margin: 0 5px;
     padding: 0;
     cursor: pointer; }
-    .slick-dots li.slick-active {
+    .trail .slick-dots li.slick-active {
       background: #874487;
       border: solid 1px #874487; }
-    .slick-dots li button {
+    .trail .slick-dots li button {
       font-size: 0;
       line-height: 0;
       display: block;
