@@ -250,6 +250,10 @@ $document.on('ready', function () {
         $('.section-search').removeClass('active');
         $body.css('overflow','scroll');
     });
+
+    $document.on('click', '.wpcf7-response-output', function(e){
+      $('.wpcf7-response-output').fadeOut('slow');
+    })
     /**
      * Trilhas.
      */

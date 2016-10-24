@@ -1,8 +1,12 @@
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
+.home footer.site-footer {
+  margin-top: 0;
+}
 footer {
   &.site-footer {
+    margin-top: 20px;
     padding: 35px;
     background-color: #1d1d1d;
     border-top: solid 5px transparent;
