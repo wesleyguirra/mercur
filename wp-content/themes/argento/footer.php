@@ -49,8 +49,8 @@
                         <div class="col-md-2">
                             <ul>
                                 <li class="footer-menu-title">Contato</li>
-                                <li><a href="#">contato@argento.edu.br</a></li>
-                                <li><a href="#">(11) 4329-7417</a></li>
+                                <li><a href="mailto:contato@argento.pro.br">contato@argento.pro.br</a></li>
+                                <li><a href="tel:(11) 4329-7417">(11) 4329-7417</a></li>
                             </ul>
                         </div>
                     </div>
@@ -68,10 +68,10 @@
 											<li><a href="#"></a></li>
 											<li><a href="#"></a></li>
 										</ul>
-										<a href="tel:">11 4329-7417</a>
+										<a href="tel:(11) 4329-7417">11 4329-7417</a>
 									</div>
 									<div class="copyright">
-										<a href="http://www.citr.co"><img src="<?php echo site_url(); ?>/wp-content/themes/argento/img/logo-citr-co.png" alt=""></a>
+										<a href="http://www.citr.co" target="_blank"><img src="<?php echo site_url(); ?>/wp-content/themes/argento/img/logo-citr-co.png" alt="Cítr.co Logomark" title="Design &amp; Development: citr.co"></a>
 	                  <p>ARGENTO DESENVOLVIMENTO PROFISSIONAL 2015. Todos os direitos reservados.</p>
 									</div>
                 </div>
