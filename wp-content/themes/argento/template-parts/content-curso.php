@@ -47,8 +47,6 @@
 									<td>Início</td>
 									<td>Aulas</td>
 									<td>Carga Horária</td>
-									<td>Modalidade</td>
-									<td>Investimento</td>
 								</tr>
 								<tr>
 									<!-- Inserir funcionalidade que verifica se existem turmas, onde se não existirem turmas será exibido um form -->
@@ -56,8 +54,6 @@
 									<td><?php the_field('inicio'); ?></td>
 									<td><?php the_field('aulas'); ?></td>
 									<td><?php the_field('carga_horaria'); ?> Horas</td>
-									<td><?php the_field('modalidade'); ?></td>
-									<td><?php the_field('investimento'); ?></td>
 								</tr>
 							</table>
 						</div>

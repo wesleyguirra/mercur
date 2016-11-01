@@ -1,6 +1,11 @@
 @import "http://argento.edu.s3.amazonaws.com/css/flaticon.css";
 @import "fonts";
 
+a:hover, a:focus {
+  color: #2c3b47;
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
 }
