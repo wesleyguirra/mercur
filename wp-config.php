@@ -22,14 +22,31 @@
 /** The name of the database for WordPress */
 define('DB_NAME', 'argento');
 
+//	+ -------------------- +
+//	|    Test Enviroment   |
+//	+ -------------------- +
+
 /** MySQL database username */
-define('DB_USER', 'citrco');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '4CudUQavpA');
+define('DB_PASSWORD', '4?CudUQav$pA');
 
 /** MySQL hostname */
-define('DB_HOST', 'mysql427.umbler.com');
+define('DB_HOST', 'localhost');
+
+//	+ -------------------------- +
+//	|    Production Enviroment   |
+//	+ -------------------------- +
+
+/** MySQL database username */
+//define('DB_USER', 'citrco');
+
+/** MySQL database password */
+//define('DB_PASSWORD', '4CudUQavpA');
+
+/** MySQL hostname */
+//define('DB_HOST', 'mysql427.umbler.com:41890');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
