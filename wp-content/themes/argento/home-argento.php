@@ -22,7 +22,7 @@ $pages = get_pages($args);
 						<div class="trail">
 								<div class="trail-header">
 										<h2 class="trail-header-title">Cursos</h2>
-										<p class="trail-header-desc"><?php echo count($pages); ?> Cursos</p>
+										<!-- <p class="trail-header-desc"><?php echo count($pages); ?> Cursos</p> -->
 										<div class="trail-header-menu">
 												<button class="trail-header-btn trail-header-btn-open js-trail-open is-active">Ver todos</button><button class="trail-header-btn trail-header-btn-close js-trail-close">Fechar</button>
 										</div>

@@ -2,7 +2,6 @@
     <ul class="pull-right">
         <li><i class="flaticon-busca"></i></li>
         <li><span><b>+55 11</b> 4329-7417</span></li>
-        <li><span><b>+55 11</b> 4329-7447</span></li>
     </ul>
 </div>
 <div class="col-md-12">

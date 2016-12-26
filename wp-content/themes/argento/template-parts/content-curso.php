@@ -17,10 +17,8 @@
 					<h2>Sobre o Curso</h2>
 					<div class="row">
 						<div class="col-md-6">
-							<h3>Metodologia</h3>
-							<p>
-								<?php the_field('metodologia'); ?>
-							</p>
+							<h2>Objetivos do curso</h2>
+							<?php the_field('objetivos_do_curso'); ?>
 						</div>
 						<div class="col-md-6">
 							<h3>Público Alvo</h3>
@@ -30,11 +28,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6">
-							<h2>Objetivos do curso</h2>
-							<?php the_field('objetivos_do_curso'); ?>
-						</div>
-						<div class="col-md-6">
+						<div class="col-md-offset-6 col-md-6">
 							<?php echo do_shortcode('[contact-form-7 id="22" title="Cronograma"]'); ?>
 						</div>
 					</div>
