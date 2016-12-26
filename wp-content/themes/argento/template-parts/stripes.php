@@ -12,8 +12,6 @@
 		<div class="row">
 			<div class="col-md-12 header-stripes">
 					<div class="stripe-one"></div>
-					<div class="stripe-two"></div>
-					<div class="stripe-three"></div>
 			</div>
 		</div>
 </div>

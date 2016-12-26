@@ -49,12 +49,12 @@
 			</div>
 		</div>
 	</div>
-	<header id="masthead" class="site-header <?php if (is_page_template('home-argento.php') ) : print "fixed" ?><?php endif; ?>" role="banner">
+	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 				<?php if ( is_page_template('curso.php')) :
 					the_post_thumbnail($class='course-background');
 				endif; ?>
-		    <div class="container <?php if (is_page_template('home-argento.php') ) : print "fixed" ?><?php endif; ?>">
+		    <div class="container <?php if (is_page_template('curso.php') ) : print "fixed" ?><?php endif; ?>">
 		        <div class="row">
 	            <div class="site-logo col-xs-8 col-sm-4 col-md-3">
 								<?php get_template_part( 'template-parts/logo', 'none' ); ?>
@@ -73,12 +73,8 @@
           </div><!-- .row -->
 			</div><!-- .container -->
 
-			<!-- se não for home page nem página de cursos então exibe as tres linhas. -->
-			<?php if ( ! is_page_template('home-argento.php') ) :
-							if ( ! is_page_template('curso.php')) :
-								get_template_part( 'template-parts/stripes', 'none' );
-							endif;
-						endif; ?>
+			<!-- exibe as tres linhas. -->
+			<?php get_template_part( 'template-parts/stripes', 'none' ); ?>
 
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->

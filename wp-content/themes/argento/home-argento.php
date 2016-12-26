@@ -4,10 +4,6 @@ Template Name: Home Argento
 */
 
 get_header(); ?>
-<?php
-		if ( is_page_template('home-argento.php') ) : ?>
-		<?php putRevSlider('Home'); ?>
-<?php endif; ?>
 
 <?php $args = array(
 	'sort_order' => 'asc',
@@ -19,7 +15,6 @@ get_header(); ?>
 );
 $pages = get_pages($args);
 ?>
-
 
 <div class="container">
 		<div class="row">
@@ -36,7 +31,7 @@ $pages = get_pages($args);
 
 
 								<div class="trail-courses">
-									<?php foreach ($pages as $page) { ?>
+									<?php foreach ($pages as $page) : ?>
 										<div class="trail-course">
 												<div class="trail-course-box">
 														<div class="trail-course-media">
@@ -47,7 +42,7 @@ $pages = get_pages($args);
 																		</p>
 																		<p>
 																				<a href="<?php echo get_permalink($page->ID); ?>" class="trail-course-hover-more">Ver cronograma</a>
-																				<a href="<?php echo get_permalink($page->ID); ?>" class="trail-course-hover-btn">Conheça</a>
+																				<a href="<?php echo get_permalink($page->ID); ?>" class="trail-course-hover-btn">Co os cursos</a>
 																		</p>
 																</div>
 														</div>
@@ -56,7 +51,7 @@ $pages = get_pages($args);
 														</p>
 												</div>
 										</div>
-										<?php } ?>
+									<?php endforeach; ?>
 								</div>
 						</div>
 				</div>
@@ -188,3 +183,4 @@ $pages = get_pages($args);
 
 <?php
 get_footer();
+?>
