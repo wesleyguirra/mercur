@@ -11,12 +11,13 @@
 
 <?php $cursos = array(
 	'child_of' => get_the_ID(),
-    'parent' => get_the_ID(),
+  'parent' => get_the_ID(),
 	'sort_order' => 'asc',
 	'sort_column' => 'post_title',
 	'hierarchical' => 0,
 	'post_type' => 'page',
-	'post_status' => 'publish'
+	'post_status' => 'publish',
+  'meta_key' => 'disciplina'
 );
 ?>
 
