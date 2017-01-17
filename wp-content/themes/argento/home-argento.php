@@ -10,6 +10,7 @@ get_header(); ?>
 	'sort_column' => 'post_title',
 	'hierarchical' => 1,
 	'child_of' => 7,
+	'parent' => 7,
 	'post_type' => 'page',
 	'post_status' => 'publish'
 );

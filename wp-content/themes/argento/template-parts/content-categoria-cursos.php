@@ -31,12 +31,12 @@
   </div>
 </div>
   <div class="row">
+    <?php $cursos['meta_value'] = 'língua portuguesa'; ?>
     <div class="section-cursos col-md-6">
       <div class="section-cursos-header">
-        <h2 class="section-cursos-title">Língua Portuguesa<span class="section-cursos-subtitle"><?php the_title( '[',']' ); ?></span></h2>
+        <h2 class="section-cursos-title"><?php echo $cursos['meta_value']; ?><span class="section-cursos-subtitle"><?php the_title( '[',']' ); ?></span></h2>
       </div>
       <ul class="section-cursos-lista">
-        <?php $cursos['meta_value'] = 'lingua_portuguesa'; ?>
         <?php $pages = get_pages($cursos); ?>
         <?php foreach ($pages as $page): ?>
         <li class="section-cursos-item">
@@ -47,29 +47,13 @@
         <?php endforeach; ?>
       </ul>
     </div><!-- section-cursos -->
+    <!--<div class="clearfix"></div>-->
+    <?php $cursos['meta_value'] = 'matemática'; ?>
     <div class="section-cursos col-md-6">
       <div class="section-cursos-header">
-        <h2 class="section-cursos-title">Matemática<span class="section-cursos-subtitle"><?php the_title( '[',']' ); ?></span></h2>
+        <h2 class="section-cursos-title"><?php echo $cursos['meta_value']; ?><span class="section-cursos-subtitle"><?php the_title( '[',']' ); ?></span></h2>
       </div>
       <ul class="section-cursos-lista">
-        <?php $cursos['meta_value'] = 'matematica'; ?>
-        <?php $pages = get_pages($cursos); ?>
-        <?php foreach ($pages as $page): ?>
-        <li class="section-cursos-item">
-          <a href="<?php echo get_permalink($page->ID); ?>" class="section-cursos-link">
-            <span class="section-cursos-link-wrapper"><?php echo $page->post_title; ?></span>
-          </a>
-        </li>
-        <?php endforeach; ?>
-      </ul>
-    </div><!-- section-cursos -->
-    <div class="clearfix"></div>
-    <div class="section-cursos col-md-6">
-      <div class="section-cursos-header">
-        <h2 class="section-cursos-title">gestao escolar<span class="section-cursos-subtitle"><?php the_title( '[',']' ); ?></span></h2>
-      </div>
-      <ul class="section-cursos-lista">
-        <?php $cursos['meta_value'] = 'matematica'; ?>
         <?php $pages = get_pages($cursos); ?>
         <?php foreach ($pages as $page): ?>
         <li class="section-cursos-item">
