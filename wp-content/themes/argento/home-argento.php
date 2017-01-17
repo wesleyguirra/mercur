@@ -40,15 +40,17 @@ $pages = get_pages($args);
 														<div class="trail-course-media">
 																<?php $hasPostThumbnail = has_post_thumbnail(); ?>
 																<?php $thePostThumbnail = the_post_thumbnail(); ?>
-																<?php $defaultThumbnail = '/img/default-image.jpg'; ?>
-																<img src="<?php $hasPostThumbnail ? print $thePostThumbnail : print $defaultThumbnail; ?>" alt="<?php echo $page->post_name ?>" title="<?php echo $page->post_title; ?>" class="trail-course-img">
+																<?php $defaultThumbnail = '/wp-content/themes/argento/img/default-image.jpg'; ?>
+																<?php $postThumbnail = $hasPostThumbnail ? $thePostThumbnail : $defaultThumbnail; ?>
+																
+																<img src="<?php echo $postThumbnail; ?>" alt="<?php echo $page->post_name ?>" title="<?php echo $page->post_title; ?>" class="trail-course-img">
 																<div class="trail-course-hover">
-																		<p class="trail-course-hover-info">
+																		<!--<p class="trail-course-hover-info">
 																				Paulista • <?php echo get_field( 'inicio', $page->ID ); ?><br>
-																		</p>
+																		</p>-->
 																		<p>
-																				<a href="<?php echo get_permalink($page->ID); ?>" class="trail-course-hover-more">Ver cronograma</a>
-																				<a href="<?php echo get_permalink($page->ID); ?>" class="trail-course-hover-btn">Co os cursos</a>
+																				<!--<a href="<?php echo get_permalink($page->ID); ?>" class="trail-course-hover-more">Ver cronograma</a>-->
+																				<a href="<?php echo get_permalink($page->ID); ?>" class="trail-course-hover-btn">Veja os cursos</a>
 																		</p>
 																</div>
 														</div>
