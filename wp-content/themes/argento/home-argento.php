@@ -24,9 +24,11 @@ $pages = get_pages($args);
 								<div class="trail-header">
 										<h2 class="trail-header-title">Cursos</h2>
 										<!-- <p class="trail-header-desc"><?php echo count($pages); ?> Cursos</p> -->
+										<?php if (count($pages) > 4): ?>
 										<div class="trail-header-menu">
 												<button class="trail-header-btn trail-header-btn-open js-trail-open is-active">Ver todos</button><button class="trail-header-btn trail-header-btn-close js-trail-close">Fechar</button>
 										</div>
+										<?php endif; ?>
 								</div>
 
 
@@ -36,7 +38,10 @@ $pages = get_pages($args);
 										<div class="trail-course">
 												<div class="trail-course-box">
 														<div class="trail-course-media">
-																<img src="<?php echo get_field( 'imagem_do_curso', $page->ID ); ?>" alt="<?php echo $page->post_name ?>" title="<?php echo $page->post_title; ?>" class="trail-course-img">
+																<?php $hasPostThumbnail = has_post_thumbnail(); ?>
+																<?php $thePostThumbnail = the_post_thumbnail(); ?>
+																<?php $defaultThumbnail = '/img/default-image.jpg'; ?>
+																<img src="<?php $hasPostThumbnail ? print $thePostThumbnail : print $defaultThumbnail; ?>" alt="<?php echo $page->post_name ?>" title="<?php echo $page->post_title; ?>" class="trail-course-img">
 																<div class="trail-course-hover">
 																		<p class="trail-course-hover-info">
 																				Paulista • <?php echo get_field( 'inicio', $page->ID ); ?><br>
