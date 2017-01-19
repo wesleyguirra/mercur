@@ -21,9 +21,6 @@
 );
 ?>
 <?php $pages = get_pages($cursos); ?>
-<pre>
-<?php echo $page->meta_value; ?>
-</pre>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="container">
 <div class="row">
