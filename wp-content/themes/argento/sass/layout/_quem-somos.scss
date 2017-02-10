@@ -3,8 +3,6 @@
 --------------------------------------------------------------*/
 .section-quem-somos {
   position: relative;
-  padding: 250px 0 200px 0;
-  margin: -48px 0 0 0;
   z-index: -1;
   .quem-somos-title {
     font: 700 3rem 'Gotham Bold';
@@ -13,14 +11,14 @@
     padding: 40px;
     text-align: center;
   }
-  .quem-somos-bg {
-    position: absolute;
-    top: 0;
-    z-index: -3;
-  }
 }
 
 .section-nossa-equipe {
+  .nossa-equipe-member {
+    img {
+      // border-radius: 100%;
+    }
+  }
   .nossa-equipe-member-name {
 	margin-top: 30px;
 	display: block;

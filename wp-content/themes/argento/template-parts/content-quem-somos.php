@@ -8,17 +8,23 @@
  */
 
 ?>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="entry-title">Manifesto Argento</h1>
+    </div>
+  </div>
+</div><!-- .container -->
 <div class="section-quem-somos">
   <div class="quem-somos-bg">
-    <?php the_post_thumbnail($class='argento-img'); ?>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="quem-somos-title">"Juntos fazemos educação de qualidade social"</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <?php the_post_image_responsive(); ?>
+        </div>
       </div>
-    </div>
-  </div><!-- .container -->
+    </div> 
+  </div>
 
 </div><!-- .section-quem-somos -->
 <div class="container">
@@ -31,14 +37,15 @@
 <div class="section-nossa-equipe">
 
 
-  <?php
-    $user_id = 2;
-    while ($user_id <= 5):
-      $user_info = get_userdata($user_id); ?>
-
+  <?php $user_id = 2; ?>
+    <?php while ($user_id <= 5): ?>
+      <?php $user_info = get_userdata($user_id); ?>
       <div class="nossa-equipe-member">
         <div class="container">
           <div class="row">
+            <div class="col-md-6">
+              <img src="http://argento.edu.s3.amazonaws.com/img/<?php echo $user_info->nickname; ?>.png" alt="<?php the_field('first_member_name'); ?>">
+            </div>
             <div class="col-md-6">
               <div class="nossa-equipe-member-info">
                 <h2 class="nossa-equipe-member-name"><?php echo $user_info->first_name ." ". $user_info->last_name; ?></h2>
@@ -50,12 +57,9 @@
                 <i class="flaticon-right-arrow"></i>
               </div><!-- .nossa-equipe-nav-arrows -->
             </div>
-            <div class="col-md-6">
-              <img src="http://argento.edu.s3.amazonaws.com/img/<?php echo $user_info->nickname; ?>.png" alt="<?php the_field('first_member_name'); ?>">
-            </div>
           </div>
         </div>
       </div><!-- .nossa-equipe-member -->
-      <?php $user_id++;
-    endwhile; ?>
+      <?php $user_id++; ?>
+    <?php endwhile; ?>
   <!-- Member -->

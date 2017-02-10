@@ -4,21 +4,32 @@
 .section-testimonials {
   margin: 50px 0 0 0;
   padding: 50px 0;
-  background: url(../img/depoimentos-educacao-continuada.jpg);
+  // background: url(../img/depoimentos-educacao-continuada.jpg);
   background-size: cover;
+  .testimonial-photo {
+    display: inline-block;
+    max-width: 120px;
+    img {
+      border-radius: 100%;
+    }
+  }
   .testimonial-title {
     margin-bottom: 15px;
     display: block;
-    color: #ffffff;
+    // color: #ffffff;
     font: 700 20px Gotham;
-    text-transform: uppercase;
-    text-align: center;
+    // text-transform: uppercase;
+    // text-align: center;
   }
   p {
     display: inline-block;
-    color: #ffffff;
-    font: 500 20px Gotham;
-    text-align: center;
+    // font: 500 20px Gotham;
+    // text-align: center;
+  }
+  .testimonial-author {
+    display: inline-block;
+    text-align: right;
+    font: 700 1em Gotham;
   }
   .slick-dots {
     position: absolute;

@@ -340,3 +340,14 @@ function rd_user_id_column_style(){
 	echo '<style>.column-user_id{width: 5%}</style>';
 }
 add_action('admin_head-users.php',  'rd_user_id_column_style');
+
+
+function the_post_image_responsive($post = null){
+	$post = get_post( $post );
+	if ( ! $post ) {
+		return '';
+	} 
+	$d = wp_get_attachment_image_src(get_post_thumbnail_id($post));
+	
+	echo "<img src=\"{$d[0]}\">";
+}

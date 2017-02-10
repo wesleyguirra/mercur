@@ -21,6 +21,7 @@
 );
 ?>
 <?php $pages = get_pages($cursos); ?>
+<?php $disciplinas = array_unique(array_column($pages, 'meta_value')); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="container">
@@ -29,7 +30,6 @@
     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
   </div>
 </div>
-  <?php $disciplinas = array_unique(array_column($pages, 'meta_value')); ?>
   <div class="row">
     <?php foreach ($disciplinas as $disciplina): ?>
     <?php $cursos = array(

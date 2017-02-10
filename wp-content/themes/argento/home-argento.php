@@ -65,22 +65,30 @@ $pages = get_pages($args);
 				</div>
 		</div>
 </div>
-<div class="section-testimonials">
+<!--<div class="section-testimonials">
 		<div class="container">
 				<div class="row">
 						<div class="testimonials">
 							<div class="testimonial-slider">
+									<div class="testimonial-photo">
+										<img src="https://lh6.googleusercontent.com/-BFg8bXQKTeM/AAAAAAAAAAI/AAAAAAAAB9c/xv11_lQXW1M/photo.jpg" alt="">
+									</div>
 									<span class="testimonial-title">E.E. PROFª MARIA EUNICE M.FERREIRA</span>
 									<p>A Equipe Gestora, logo no início do curso, percebeu que a construção de um Projeto Político Pedagógico bem elaborado, construção com a participaçãoo coletiva, envolvendo toda a comunidade escolar seria a solução para muitos problemas de gestão existentes na Escola.</p>
+									<span class="testimonial-author">Mariana Pacheco - Diretora de Ensino</span>
 							</div>
 							<div class="testimonial-slider">
-									<span class="testimonial-title">Teste</span>
-									<p>Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Quem num gosti di mum que vai caçá sua turmis! Mé faiz elementum girarzis, nisi eros vermeio. </p>
+									<div class="testimonial-photo">
+										<img src="https://pbs.twimg.com/profile_images/655652623391981569/G1krPHoh_400x400.png" alt="">
+									</div>
+									<span class="testimonial-title">E.E. Profº Alberto Bacan</span>
+									<p>A Equipe Gestora, logo no início do curso, percebeu que a construção de um Projeto Político Pedagógico bem elaborado, construção com a participaçãoo coletiva, envolvendo toda a comunidade escolar seria a solução para muitos problemas de gestão existentes na Escola.</p>
+									<span class="testimonial-author">Carlos Carvalho - Coordenador de Ensino</span>
 							</div>
 						</div>
 				</div>
 		</div>
-</div>
+</div>-->
 <div class="section-paths">
 		<div class="container">
 				<div class="row">

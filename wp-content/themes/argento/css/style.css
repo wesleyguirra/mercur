@@ -2050,8 +2050,6 @@ footer.site-footer {
 --------------------------------------------------------------*/
 .section-quem-somos {
   position: relative;
-  padding: 250px 0 200px 0;
-  margin: -48px 0 0 0;
   z-index: -1; }
   .section-quem-somos .quem-somos-title {
     font: 700 3rem 'Gotham Bold';
@@ -2059,10 +2057,6 @@ footer.site-footer {
     text-transform: uppercase;
     padding: 40px;
     text-align: center; }
-  .section-quem-somos .quem-somos-bg {
-    position: absolute;
-    top: 0;
-    z-index: -3; }
 
 .section-nossa-equipe .nossa-equipe-member-name {
   margin-top: 30px;
@@ -2576,20 +2570,22 @@ footer.site-footer {
 .section-testimonials {
   margin: 50px 0 0 0;
   padding: 50px 0;
-  background: url(../img/depoimentos-educacao-continuada.jpg);
   background-size: cover; }
+  .section-testimonials .testimonial-photo {
+    display: inline-block;
+    max-width: 120px; }
+    .section-testimonials .testimonial-photo img {
+      border-radius: 100%; }
   .section-testimonials .testimonial-title {
     margin-bottom: 15px;
     display: block;
-    color: #ffffff;
-    font: 700 20px Gotham;
-    text-transform: uppercase;
-    text-align: center; }
+    font: 700 20px Gotham; }
   .section-testimonials p {
+    display: inline-block; }
+  .section-testimonials .testimonial-author {
     display: inline-block;
-    color: #ffffff;
-    font: 500 20px Gotham;
-    text-align: center; }
+    text-align: right;
+    font: 700 1em Gotham; }
   .section-testimonials .slick-dots {
     position: absolute;
     bottom: -45px;
