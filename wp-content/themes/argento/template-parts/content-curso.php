@@ -32,7 +32,7 @@
 							<?php echo do_shortcode('[contact-form-7 id="22" title="Cronograma"]'); ?>
 						</div>
 					</div>
-					<div class="row">
+					<!--<div class="row">
 						<div class="col-md-12">
 							<h2>Informações do curso</h2>
 							<table class="table">
@@ -43,7 +43,7 @@
 									<td>Carga Horária</td>
 								</tr>
 								<tr>
-									<!-- Inserir funcionalidade que verifica se existem turmas, onde se não existirem turmas será exibido um form -->
+									Inserir funcionalidade que verifica se existem turmas, onde se não existirem turmas será exibido um form
 									<td><?php $turmas = get_field('turmas'); if ($turmas == 0) {echo "<i class=\"flaticon-cancelar\"></i>";} else {echo "<i class=\"flaticon-aceitar\"></i>";} ?></td>
 									<td><?php the_field('inicio'); ?></td>
 									<td><?php the_field('aulas'); ?></td>
@@ -51,7 +51,7 @@
 								</tr>
 							</table>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
 </div><!-- .container -->

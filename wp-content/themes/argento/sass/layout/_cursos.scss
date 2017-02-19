@@ -24,7 +24,10 @@
 @media (min-width: $screen-lg-min) {
 	.section-cursos-item {
 		float: left;
-		width: 50%
+		width: 25%
+	}
+	.page-template-categoria-cursos .section-cursos-item {
+		width: 50%;
 	}
 }
 

@@ -8,13 +8,13 @@
  */
 
 ?>
-<div class="container">
+<!--<div class="container">
   <div class="row">
     <div class="col-md-6">
       <h1 class="entry-title">Manifesto Argento</h1>
     </div>
   </div>
-</div><!-- .container -->
+</div> .container -->
 <div class="section-quem-somos">
   <div class="quem-somos-bg">
     <div class="container">

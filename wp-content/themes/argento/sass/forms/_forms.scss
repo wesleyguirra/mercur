@@ -61,12 +61,13 @@ form {
     padding: 8px;
     border-radius: 0;
     font: 600 14px Roboto;
-    border: solid 1px rgba(0, 0, 0, 0.7);
-    background: transparent;
+    border: solid 1px #d3d3d3;
+    background: #f9f9f9;
     margin: 10px 0 10px 0;
     display: inline-block;
     min-width: 75%;
     max-width: 100%;
+    border-radius: 3px;
   }
 
   input[type="submit"] {
@@ -80,7 +81,7 @@ form {
   input::-moz-placeholder {
     font-size: 14px;
     font-family: Roboto;
-    color: #000;
+    color: #d3d3d3;
     text-transform: uppercase;
 
   }

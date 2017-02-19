@@ -5,6 +5,7 @@
   background-color: rgba(135, 68, 135, .9);
   opacity: 0;
   visibility: hidden;
+  transition: all linear .2s;
   &.active {
     padding-top: 50px;
     opacity: 1;

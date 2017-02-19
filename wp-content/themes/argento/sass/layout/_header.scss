@@ -2,6 +2,8 @@
 ## Header
 --------------------------------------------------------------*/
 header {
+  background: url("/wp-content/themes/argento/img/header-bg.jpg") center;
+  background-size: cover;
   &.fixed {
     width: 100%;
     position: absolute;
@@ -12,18 +14,6 @@ header {
     margin: 20px 0;
   }
 }
-
-.button-search-mobile, .button-collapse-mobile {
-  text-align: center;
-  margin: 25px 0 0 0;
-  a {
-    font-size: 24px;
-  	color: #874487;
-  	padding: 10px;
-    text-decoration: none
-  }
-}
-
 
 @media (min-width: $screen-md-min) {
   .header-stripes {

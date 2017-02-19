@@ -63,9 +63,9 @@
 								<a href="#">
 									<i class="flaticon-interface"></i>
 								</a>
-								<a href="#">
+								<!--<a href="#">
 									<i class="flaticon-busca"></i>
-								</a>
+								</a>-->
 							</div>
               <div class="site-nav col-md-6 col-md-offset-3 visible-md visible-lg">
 								<?php get_template_part( 'template-parts/site', 'nav' ); ?>

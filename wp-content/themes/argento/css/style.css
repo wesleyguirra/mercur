@@ -1891,22 +1891,15 @@ table th[class*="col-"] {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-header.fixed {
-  width: 100%;
-  position: absolute;
-  z-index: 999; }
-
-header .site-logo {
-  margin: 20px 0; }
-
-.button-search-mobile, .button-collapse-mobile {
-  text-align: center;
-  margin: 25px 0 0 0; }
-  .button-search-mobile a, .button-collapse-mobile a {
-    font-size: 24px;
-    color: #874487;
-    padding: 10px;
-    text-decoration: none; }
+header {
+  background: url("/wp-content/themes/argento/img/header-bg.jpg") center;
+  background-size: cover; }
+  header.fixed {
+    width: 100%;
+    position: absolute;
+    z-index: 999; }
+  header .site-logo {
+    margin: 20px 0; }
 
 @media (min-width: 992px) {
   .header-stripes {
@@ -2010,6 +2003,8 @@ footer.site-footer {
 @media (min-width: 1200px) {
   .section-cursos-item {
     float: left;
+    width: 25%; }
+  .page-template-categoria-cursos .section-cursos-item {
     width: 50%; } }
 
 .section-cursos-item {
@@ -2671,7 +2666,8 @@ footer.site-footer {
   width: 100%;
   background-color: rgba(135, 68, 135, 0.9);
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  transition: all linear .2s; }
   .mobile-menu.active {
     padding-top: 50px;
     opacity: 1;
@@ -2802,12 +2798,13 @@ form textarea {
   padding: 8px;
   border-radius: 0;
   font: 600 14px Roboto;
-  border: solid 1px rgba(0, 0, 0, 0.7);
-  background: transparent;
+  border: solid 1px #d3d3d3;
+  background: #f9f9f9;
   margin: 10px 0 10px 0;
   display: inline-block;
   min-width: 75%;
-  max-width: 100%; }
+  max-width: 100%;
+  border-radius: 3px; }
 
 form input[type="submit"] {
   padding: 8px;
@@ -2819,7 +2816,7 @@ form input[type="submit"] {
 form input::-moz-placeholder {
   font-size: 14px;
   font-family: Roboto;
-  color: #000;
+  color: #d3d3d3;
   text-transform: uppercase; }
 
 /*--------------------------------------------------------------
@@ -2901,11 +2898,21 @@ a:active, a:hover {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+.button-search-mobile, .button-collapse-mobile {
+  text-align: center;
+  margin: 20px 0 0 0; }
+  .button-search-mobile a, .button-collapse-mobile a {
+    float: right;
+    font-size: 24px;
+    color: #FFF;
+    padding: 5px 10px;
+    text-decoration: none; }
+
 @media (min-width: 992px) {
   .site-logo {
     margin: 20px 0; }
   .site-nav ul {
-    margin: 20px 0;
+    margin: 35px 0;
     padding: 0; }
     .site-nav ul li {
       margin-right: 10px;
@@ -2915,30 +2922,29 @@ a:active, a:hover {
       .site-nav ul li a, .site-nav ul li span {
         text-transform: uppercase;
         font: 400 15px GothamLight;
-        color: #000000; }
+        color: #FFF; }
         .site-nav ul li a b, .site-nav ul li span b {
           text-transform: uppercase;
-          font: 700 15px Gotham;
-          color: #000000; }
+          font: 700 15px Gotham; }
       .site-nav ul li a:after {
         display: block;
         content: "";
         margin-top: 5px;
         width: 25px;
         height: 4px;
-        background-color: #874487;
+        background-color: #2C3B47;
         -webkit-transition: width .2s;
         /* Safari */
         transition: width .2s; }
       .site-nav ul li a:hover {
         text-decoration: none; }
-      .site-nav ul li a:hover:after {
-        width: 100%; }
       .site-nav ul li .flaticon-busca {
         font-size: 24px;
-        color: #874487;
+        color: #FFF;
         padding: 5px;
-        cursor: pointer; } }
+        cursor: pointer; }
+    .site-nav ul li:hover a:after {
+      width: 100%; } }
 
 /*--------------------------------------------------------------
 # Content

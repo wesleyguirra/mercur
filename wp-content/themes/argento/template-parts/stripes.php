@@ -8,10 +8,10 @@
  */
 
 ?>
-<div class="container-fluid">
+<!--<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 header-stripes">
 					<div class="stripe-one"></div>
 			</div>
 		</div>
-</div>
+</div>-->

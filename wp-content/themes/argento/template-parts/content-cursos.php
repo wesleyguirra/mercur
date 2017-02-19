@@ -28,7 +28,7 @@
   </div>
 </div>
   <div class="row">
-    <div class="section-cursos col-md-6">
+    <div class="section-cursos col-md-12">
       <div class="section-cursos-header">
         <h2 class="section-cursos-title">Cursos<span class="section-cursos-subtitle">[ ciclo i ]</span></h2>
       </div>
