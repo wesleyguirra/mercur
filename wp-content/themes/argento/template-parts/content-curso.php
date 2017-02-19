@@ -30,8 +30,8 @@
 								</div>
 								<div class="col-md-12">
 									<div class="newsletter-form cronograma dark-form">
-										<h3>Baixe o cronograma do curso</h3>
-										<?php echo do_shortcode('[contact-form-7 id="22" title="Cronograma"]'); ?>
+										<h3>Baixe o cronograma dos cursos</h3>
+										<?php $title = the_title(); echo do_shortcode('[contact-form-7 title="$title"]'); ?>
 									</div>
 								</div>
 							</div>
