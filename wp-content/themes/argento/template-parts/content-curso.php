@@ -29,7 +29,10 @@
 					</div>
 					<div class="row">
 						<div class="col-md-offset-6 col-md-6">
-							<?php echo do_shortcode('[contact-form-7 id="22" title="Cronograma"]'); ?>
+							<div class="newsletter-form cronograma dark-form">
+								<h3>Baixe o cronograma do curso</h3>
+								<?php echo do_shortcode('[contact-form-7 id="22" title="Cronograma"]'); ?>
+							</div>
 						</div>
 					</div>
 					<!--<div class="row">

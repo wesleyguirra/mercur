@@ -58,31 +58,61 @@ form {
   input[type="url"],
   input[type="email"],
   textarea {
-    padding: 8px;
+    padding: 0 20px;
+    min-height: 48px;
     border-radius: 0;
     font: 600 14px Roboto;
-    border: solid 1px #d3d3d3;
+    border: solid 2px #d3d3d3;
     background: #f9f9f9;
     margin: 10px 0 10px 0;
     display: inline-block;
     min-width: 75%;
     max-width: 100%;
     border-radius: 3px;
+    resize: none;
   }
 
   input[type="submit"] {
-    padding: 8px;
-    font:600 14px Gotham ;
+    margin: 10px 0;
+    padding: 12px;
+    font:600 14px Roboto;
     border: solid 2px #000;
     text-transform: uppercase;
     background: transparent;
+    transition: all linear .2s;
+    &:hover {
+      background: #874487;
+      color: #fff;
+      border: solid 2px #874487;
+    }
   }
 
   input::-moz-placeholder {
     font-size: 14px;
     font-family: Roboto;
-    color: #d3d3d3;
+    color: #a1a1a1;
     text-transform: uppercase;
 
   }
+  .rc-anchor-dark.argento {
+    background: transparent;
+    margin: 10px 0;
+  }
+}
+
+.dark-form {
+  input[type="submit"] {
+    color: #f9f9f9;
+    border: solid 2px #f9f9f9;
+  }
+  span.wpcf7-list-item {
+    color: #f9f9f9;
+    margin: 10px 0;
+  }
+}
+
+// Form Newsletter
+.newsletter-form.cronograma {
+  background: url("/wp-content/themes/argento/img/header-bg.jpg") center;
+  padding: 5px 0 0 40px;
 }
