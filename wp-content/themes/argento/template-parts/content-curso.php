@@ -21,17 +21,19 @@
 							<?php the_field('objetivos_do_curso'); ?>
 						</div>
 						<div class="col-md-6">
-							<h3>Público Alvo</h3>
-							<p>
-								<?php the_field('publico_alvo'); ?>
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-offset-6 col-md-6">
-							<div class="newsletter-form cronograma dark-form">
-								<h3>Baixe o cronograma do curso</h3>
-								<?php echo do_shortcode('[contact-form-7 id="22" title="Cronograma"]'); ?>
+							<div class="row">
+								<div class="col-md-12">
+									<h3>Público Alvo</h3>
+									<p>
+										<?php the_field('publico_alvo'); ?>
+									</p>
+								</div>
+								<div class="col-md-12">
+									<div class="newsletter-form cronograma dark-form">
+										<h3>Baixe o cronograma do curso</h3>
+										<?php echo do_shortcode('[contact-form-7 id="22" title="Cronograma"]'); ?>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
