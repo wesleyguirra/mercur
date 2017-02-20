@@ -353,7 +353,7 @@ function argento_the_post_image_responsive($post = null){
 }
 
 function argento_page_has_form($form){
-	$shortcode = do_shortcode('[contact-form-7 title='.$form.']');
+	$shortcode = do_shortcode("[contact-form-7 title=\"{$form}\"]");
 	if(!strpos($shortcode, 'Not Found')){
 		return true;
 	} else {
@@ -362,10 +362,6 @@ function argento_page_has_form($form){
 }
 
 function argento_get_the_form($form_name){
-	$shortcode = do_shortcode('[contact-form-7 title='.$form_name.']');
-	if(!strpos($shortcode, 'Not Found')){
-		echo $shortcode;
-	} else {
-		return false;
-	}
+	$shortcode = do_shortcode("[contact-form-7 title=\"{$form_name}\"]");
+	echo $shortcode;
 }
