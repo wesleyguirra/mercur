@@ -20,7 +20,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <?php the_post_image_responsive(); ?>
+          <?php argento_the_post_image_responsive(); ?>
         </div>
       </div>
     </div> 

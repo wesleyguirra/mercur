@@ -28,13 +28,15 @@
 										<?php the_field('publico_alvo'); ?>
 									</p>
 								</div>
+								<?php if(argento_page_has_form(get_the_title())): ?>
 								<div class="col-md-12">
 									<div class="newsletter-form cronograma dark-form">
 										<h3>Baixe o cronograma do curso</h3>
-										<?php $shortcode = '[contact-form-7 title='.get_the_title().']' ?>
-										<?php echo do_shortcode($shortcode); ?>
+										<?php argento_get_the_form(get_the_title()); ?>
 									</div>
 								</div>
+								<?php else: ?>
+								<?php endif; ?>
 							</div>
 						</div>
 					</div>

@@ -81,7 +81,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<?php get_breadcrumbs(); ?>
+				<?php argento_get_breadcrumbs(); ?>
 			</div>
 		</div>
 	</div><!-- .container -->

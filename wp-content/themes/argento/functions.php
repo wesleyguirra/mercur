@@ -157,7 +157,7 @@ if (!is_admin()){
   wp_enqueue_script('jquery');
 }
 
-function get_breadcrumbs() {
+function argento_get_breadcrumbs() {
 	/* === OPTIONS === */
 	$text['home']     = 'Ínicio'; // text for the 'Home' link
 	$text['category'] = 'Arquivos por Categoria "%s"'; // text for a category page
@@ -317,32 +317,32 @@ function get_breadcrumbs() {
 } // end of dimox_breadcrumbs()
 
 // The Column User ID
-function rd_user_id_column( $columns ) {
+function argento_rd_user_id_column( $columns ) {
 	$columns['user_id'] = 'ID';
 	return $columns;
 }
-add_filter('manage_users_columns', 'rd_user_id_column');
+add_filter('manage_users_columns', 'argento_rd_user_id_column');
 
 /*
  * Column content
  */
-function rd_user_id_column_content($value, $column_name, $user_id) {
+function argento_rd_user_id_column_content($value, $column_name, $user_id) {
 	if ( 'user_id' == $column_name )
 		return $user_id;
 	return $value;
 }
-add_action('manage_users_custom_column',  'rd_user_id_column_content', 10, 3);
+add_action('manage_users_custom_column',  'argento_rd_user_id_column_content', 10, 3);
 
 /*
  * Column style (you can skip this if you want)
  */
-function rd_user_id_column_style(){
+function argento_rd_user_id_column_style(){
 	echo '<style>.column-user_id{width: 5%}</style>';
 }
-add_action('admin_head-users.php',  'rd_user_id_column_style');
+add_action('admin_head-users.php',  'argento_rd_user_id_column_style');
 
 
-function the_post_image_responsive($post = null){
+function argento_the_post_image_responsive($post = null){
 	$post = get_post( $post );
 	if ( ! $post ) {
 		return '';
@@ -350,4 +350,22 @@ function the_post_image_responsive($post = null){
 	$d = wp_get_attachment_image_src(get_post_thumbnail_id($post));
 	
 	echo "<img src=\"{$d[0]}\">";
+}
+
+function argento_page_has_form($form){
+	$shortcode = do_shortcode('[contact-form-7 title='.$form.']');
+	if(!strpos($shortcode, 'Not Found')){
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function argento_get_the_form($form_name){
+	$shortcode = do_shortcode('[contact-form-7 title='.$form_name.']');
+	if(!strpos($shortcode, 'Not Found')){
+		echo $shortcode;
+	} else {
+		return false;
+	}
 }
