@@ -1,0 +1,19 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url" : "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "4.7.4",
+        "wpackagist-plugin/contact-form-7": "4.6.1",
+        "wpackagist-plugin/advanced-custom-fields": "4.4.11"
+    },
+    "extra": {
+        "wordpress-install-dir": "wordpress",
+        "installer-paths": {
+            "content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    }
+}

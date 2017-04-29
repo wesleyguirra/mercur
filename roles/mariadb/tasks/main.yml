@@ -1,28 +1,28 @@
 ---
 # This playbook will install MariaDB and create db user and give permissions.
+- name: 1. Install MariaDB server
+  apt: name=mariadb-server state=present
 
-- name: Install MariaDB package
-  yum: name={{ item }} state=installed
-  with_items:
-   - mariadb-server
-   - MySQL-python
-   - libselinux-python
-   - libsemanage-python
+- name: 2. Start Mysql Service
+  service: name=mysql state=started enabled=true
 
-- name: Configure SELinux to start mysql on any port
-  seboolean: name=mysql_connect_any state=true persistent=yes
+- name: Install python Mysql package #required for mysql_db tasks
+  apt: name=python-mysqldb state=present
 
-- name: Create Mysql configuration file
-  template: src=my.cnf.j2 dest=/etc/my.cnf
-  notify:
-  - restart mariadb
+- name: 3. Create a new database
+  mysql_db: name={{ wp_db_name }} state=present
 
-- name: Create MariaDB log file
-  file: path=/var/log/mysqld.log state=touch owner=mysql group=mysql mode=0775
+- name: 4. Create a database user
+  mysql_user: name={{ wp_db_user }} password={{ wp_db_password }} priv=*.*:ALL host=localhost state=present
 
-- name: Start MariaDB Service
-  service: name=mariadb state=started enabled=yes
+- name: 5a. Copy sample data
+  copy: src=dump.sql dest=/tmp/dump.sql
 
-- name: insert firewalld rule
-  firewalld: port={{ mysql_port }}/tcp permanent=true state=enabled immediate=yes
-  ignore_errors: yes
+- name: 5b. Insert sample data
+  shell: cat /tmp/dump.sql | mysql -u {{ wp_db_user }} -p{{ wp_db_password }} {{ wp_db_name }}
+
+- name: 6a. Install MySQL extension for PHP
+  apt: name=php5-mysql state=present
+
+- name: 6b. Restart Apache
+  service: name=apache2 state=restarted

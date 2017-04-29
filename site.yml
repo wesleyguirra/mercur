@@ -1,5 +1,5 @@
 ---
-- name: Install WordPress, MariaDB, Nginx, and PHP-FPM
+- name: Install MariaDB & Apache
   hosts: all
   remote_user: root
   become: yes
@@ -7,8 +7,5 @@
 
 
   roles:
-    - common
+    - apache2
     - mariadb
-    - nginx
-    - php-fpm
-    - wordpress
