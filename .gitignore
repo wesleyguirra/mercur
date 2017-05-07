@@ -1,6 +1,8 @@
 /vendor
 /plugins
 /bower_components
+/content/plugins
 /node_modules
+/wordpress
 .DS_Store
 .vagrant

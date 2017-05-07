@@ -11,9 +11,9 @@
         "wpackagist-plugin/advanced-custom-fields": "4.4.11"
     },
     "extra": {
-        "wordpress-install-dir": "wordpress",
+        "wordpress-install-dir": "wp",
         "installer-paths": {
-            "content/plugins/{$name}/": ["type:wordpress-plugin"]
+            "wordpress/wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
         }
     }
 }
